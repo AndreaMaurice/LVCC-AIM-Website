@@ -21,13 +21,17 @@
   }
   
   .navbar a:hover {
-    background: #ddd;
-    color: black;
+    background: white;
+    color: #7BB9FA;
   }
 
   #caption {
     margin-top: 1.5%;
     padding: 14px 0;
+  }
+
+  .navbar a.active {
+    color: #7BB9FA;
   }
 
   .right-nav {
