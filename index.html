@@ -93,9 +93,30 @@
     </div>
   </div>
   
-  <h2 style="text-align: center;">Officers' Profile</h2>
+  <main class="carousel-cards">
+    <h2>Officers' Profile</h2>
+    <br>
+    <br>
+    <span class="span">&#139;</span>
+    <span class="span">&#155;</span>
+    <section>
+        <div class="div">01</div>
+        <div class="div">02</div>
+        <div class="div">03</div>
+        <div class="div">04</div>
+        <div class="div">05</div>
+        <div class="div">06</div>
+        <div class="div">07</div>
+        <div class="div">08</div>
+        <div class="div"><img src="img/dave.jpg" alt="Dave Sadsad" width="225" height="250" style="object-fit: cover;"></div>
+        <div class="div">10</div>
+        <div class="div">11</div>
+    </section>
+  </main>
+	
+	
 
-  <!-- I don't know how to create that.. Heheh 
+  <!-- 
 
   <img src="img/sample-profile.png" alt="" height="250" style="border-radius: 50%; background-color: black; margin-left: 20%;">
   <div style="float: right; text-align: center;">
@@ -154,3 +175,37 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+  var span = document.getElementsByClassName('span');
+  var div = document.getElementsByClassName('div');
+  var l = 0;
+  span[1].onclick = ()=>{
+      l++;
+      for(var i of div)
+      {
+          if (l==0) {i.style.left = "0px";}
+          if (l==1) {i.style.left = "-265px";}
+          if (l==2) {i.style.left = "-530px";}
+          if (l==3) {i.style.left = "-795px";}
+          if (l==4) {i.style.left = "-1060px";}
+          if (l==5) {i.style.left = "-1325px";}
+          if (l==6) {i.style.left = "-1590px";}
+          if (l>6) {l=6;}
+      }
+  }
+  span[0].onclick = ()=>{
+      l--;
+      for(var i of div)
+      {
+          if (l==0) {i.style.left = "0px";}
+          if (l==1) {i.style.left = "-265px";}
+          if (l==2) {i.style.left = "-530px";}
+          if (l==3) {i.style.left = "-795px";}
+          if (l==4) {i.style.left = "-1060px";}
+          if (l==5) {i.style.left = "-1325px";}
+          if (l==6) {i.style.left = "-1590px";}
+          if (l<0) {l=0;}
+      }
+  }
+</script>
