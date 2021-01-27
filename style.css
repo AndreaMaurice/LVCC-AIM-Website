@@ -39,7 +39,7 @@ a{
     align-items: center;
   }
   .menu-items{
-    margin-inline: 10px;
+    margin-inline: 15px;
     color: white;
   }
   .menu-items:hover{
@@ -57,26 +57,24 @@ a{
   text-align: center;
 }
 
-  /* EVENTS
+  /* EVENTS */
   .events{
     text-align: center;
+    margin-block: 5%;
+    padding-block: 2%;
+    background-color: #f9f9f9;
   }
-  /* Float four columns side by side */
-  /* .column {
-    float: left;
-    size: 250 300;
-    padding: 0 10px;
-  } */
-  
-  /* Remove extra left and right margins, due to padding */
-  /* .row {margin: 0 -5px;} */
-  
-  /* Clear floats after the columns */
-  /* .row:after {
+  .events-cards{
+    display: flex;
+    padding: auto;
+    padding-block: 30px;
+    padding-inline: 10%;
+  }
+  .events-cards:after {
     content: "";
     display: table;
     clear: both;
-  } */
+  }
   
   /* Responsive columns */
   /* @media screen and (max-width: 600px) {
@@ -88,21 +86,18 @@ a{
   }
    */
   /* Style the counter cards */
-  /*.card {
+  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
+    height: 350px;
     text-align: center;
-    background-color: #C4C4C4;
+    margin: auto;
+    background-color: white;
   }
 
   .card img {
     background-color: white;
   }
-
-  .events-cards {
-    margin-left: 10.5%;
-
-  } */
 
   /* FOOT */  
   .footer{
@@ -115,24 +110,88 @@ a{
     padding-inline: 5%;
     padding-block-start: 2%;
     padding-block-end: 1%;
+    vertical-align: middle;
   }
   .foot{
     display: flex;
-    align-items: center;
-    column-count: 3;
+    margin-block: 2.5%;
   }
   .foot-base{
     display: flex;
-    align-items: baseline;
-    margin-top: 20px;
   }
   .base-items{
-    flex: 1;
+    margin-inline: 10px;
   }
 
   .foot-left, .foot-centered, .foot-right{
     text-align: center;
+    margin: auto;
   }
+
+/* Social Media Buttons */
+.sub-footer {
+  display: grid;
+  place-items: center;
+}
+.wrapper .button{
+  color: #446CFC;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  overflow: hidden;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all .3s ease-out;
+}
+.wrapper .button:hover{
+  width: auto;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #446CFC;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #446CFC;
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  margin-inline: 10px; 
+  transition: all .3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: blue;
+}
+.wrapper .button:nth-child(2) span{
+  color: blue;
+}
+
+.icon{
+  color: #446CFC;
+}
+.wrapper{
+  margin-top: 10px;
+}
+
 
   /* .footer-right {
     float: right;
