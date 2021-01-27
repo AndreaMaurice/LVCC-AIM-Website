@@ -24,6 +24,7 @@ a{
     padding-inline: 5%;
     align-items: center;
     display: flex;
+    z-index: 2;
   }
   .logo{
     display: flex;
