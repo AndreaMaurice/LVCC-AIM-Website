@@ -60,11 +60,10 @@ a{
 
   /* EVENTS */
   .events{
-    text-align: left;
+    text-align: center;
     margin-block: 5%;
     padding-block: 2%;
     background-color: #f9f9f9;
-    margin: 25%;
   }
   .events-cards{
     display: flex;
