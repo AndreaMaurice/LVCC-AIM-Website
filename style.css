@@ -59,45 +59,33 @@ a{
 }
 
   /* EVENTS */
-  .events{
-    text-align: center;
-    margin-block: 5%;
-    padding-block: 2%;
-    background-color: #f9f9f9;
-  }
-  .events-cards{
+ .row {
     display: flex;
-    padding: auto;
-    padding-block: 30px;
-    padding-inline: 10%;
-  }
-  .events-cards:after {
-    content: "";
-    display: table;
-    clear: both;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
   }
   
-  /* Responsive columns */
-  /* @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    size: 250 300;
   }
-   */
+  
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
-    height: 350px;
     text-align: center;
-    margin: auto;
-    background-color: white;
+    background-color: #C4C4C4;
   }
 
   .card img {
     background-color: white;
+  }
+
+  .events-cards {
+    margin-left: 10.5%;
   }
 
   /* OFFICERS' PROFILE */
