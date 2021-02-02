@@ -221,3 +221,96 @@ a{
       background: #C4C4C4;
       transition: 0.5s;
   }
+
+/* FOOT */  
+  .footer{
+    background-color: #25438C;
+    color: white;
+    text-align: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    padding-inline: 5%;
+    padding-block-start: 2%;
+    padding-block-end: 1%;
+    vertical-align: middle;
+  }
+  .foot{
+    display: flex;
+    margin-block: 2.5%;
+  }
+  .foot-base{
+    display: flex;
+  }
+  .base-items{
+    margin-inline: 10px;
+  }
+
+  .foot-left, .foot-centered, .foot-right{
+    text-align: center;
+    margin: auto;
+  }
+
+/* Social Media Buttons */
+.sub-footer {
+  display: grid;
+  place-items: center;
+}
+.wrapper .button{
+  color: #446CFC;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  overflow: hidden;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all .3s ease-out;
+}
+.wrapper .button:hover{
+  width: auto;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #446CFC;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #446CFC;
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  margin-inline: 10px; 
+  transition: all .3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: blue;
+}
+.wrapper .button:nth-child(2) span{
+  color: blue;
+}
+
+.icon{
+  color: #446CFC;
+}
+.wrapper{
+  margin-top: 10px;
+}
