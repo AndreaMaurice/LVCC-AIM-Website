@@ -6,7 +6,36 @@
 
   body {
     background: #fefefe;
-    font-family: sans-serif;
+  }
+
+/* EVENTS */
+ .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    size: 250 300;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #C4C4C4;
+  }
+
+  .card img {
+    background-color: white;
+  }
+
+  .events-cards {
+    margin-left: 10.5%;
   }
 
   .container {
