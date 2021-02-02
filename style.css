@@ -58,31 +58,6 @@ a{
   text-align: center;
 }
 
-    /* @media screen and (max-width: 1245px) {
-        .carousel-cards div {
-            min-width: 205px;
-        }
-    }
-
-    @media screen and (max-width: 1090px) {
-        .carousel-cards div {
-            min-width: 205px;
-        }
-        .carousel-cards span:nth-of-type(2) {
-            left: 95%;
-        }
-    }
-
-    @media screen and (max-width: 360px) {
-        .carousel-cards div {
-            min-width: 300px;
-            margin: 10px 30px;
-        }
-        .carousel-cards span:nth-of-type(2) {
-            left: 95%;
-        }
-    } */
-
   /* FOOT */  
   .footer{
     background-color: #25438C;
@@ -175,72 +150,6 @@ a{
 .wrapper{
   margin-top: 10px;
 }
-
-
-  /* .footer-right {
-    float: right;
-    margin-top: -4.8%;
-    margin-right: 5%;
-  }
-
-  @media screen and (max-width: 1194px) {
-    .footer-left {
-      margin-top: -5.2%;
-      margin-left: 5%;
-    }
-  
-    .footer-right {
-      float: right;
-      margin-top: -5.5%;
-      margin-right: 5%;
-    }
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .footer-left {
-      margin-top: -6.2%;
-      margin-left: 5%;
-    }
-  
-    .footer-right {
-      float: right;
-      margin-top: -6.4%;
-      margin-right: 5%;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .footer-left {
-      margin-top: 0%;
-      margin-left: 10%;
-    }
-  
-    .footer-right {
-      float: right;
-      margin-top: -8.2%;
-      margin-right: 10%;
-    }
-  }
-  
-  /* Responsive footer (for mobile devices) */
-  /* @media screen and (max-width: 700px) {
-    .footer-left, .footer-right {
-      float: none;
-      text-align: center;
-      margin: 2%;
-    }
-  }
-  
-  .footer-centered img {
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-  } */
-
-
-
 
 
 /*----------ABOUT US----------*/
