@@ -1,101 +1,77 @@
 
 /* EVENTS */
- .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-  }
-  
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    size: 250 300;
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    text-align: center;
-    background-color: #C4C4C4;
-  }
+ *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-  .card img {
-    background-color: white;
-  }
+    .container {
+      width: 90%;
+      margin: 5px auto;
+    }
 
-  .events-cards {
-    margin-left: 10.5%;
-  }
+    .heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
 
-  .container {
-    width: 90%;
-    margin: 50px auto;
-  }
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-flow: wrap;
+    }
 
-  .heading {
-    text-align: center;
-    margin-bottom: 50px;
-  }
+    .card {
+      width: 20%;
+      background: #C4C4C4;
+      border: 1px solid #ccc;
+      margin-bottom: 50px;
+      transition: 0.3s;
+    }
 
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-  }
+    .card-header {
+      padding: 5px 5px;
+    }
 
-  .card {
-    width: 20%;
-    height: 400px;
-    background: #C4C4C4;
-    border: 1px solid #ccc;
-    margin-bottom: 50px;
-    padding: 1%;
-    transition: 0.3s;
-  }
+    .card-header img {
+      width: 100%;
+      height: auto;
+      width: 230;
+      height: 150;
+      background: #fefefe;
+    }
 
-  /* .card-header {
-    padding: 10px 10px;
-  } */
+    .card-body {
+        padding: 10px 20px;
+        text-align: center;
+    }
 
-  .card-header img {
-    width: 100%;
-    height: auto;
-    width: 220;
-    height: 150;
-    background: #fefefe;
-  }
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    }
 
-  .card-body {
-    margin-top: 5%;
-  }
+    /* Responsive media queries */
+    @media screen and (max-width: 1000px){
+        .card {
+            width: 40%;
+        }
+    }
 
-  .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-  }
+    @media screen and (max-width: 620px){
+        .container {
+            width: 100%;
+        }
 
-  /* Responsive media queries */
-  @media screen and (max-width: 1000px){
-      .card {
-          width: 40%;
-      }
-  }
-
-  @media screen and (max-width: 620px){
-      .container {
-          width: 100%;
-      }
-
-      .heading {
-          padding: 20px;
-      }
-      .card {
-          width: 80%;
-      }
-  }
+        .heading {
+            padding: 20px;
+        }
+        .card {
+            width: 80%;
+        }
+    }
 
 /* OFFICERS' PROFILE */
   main {
