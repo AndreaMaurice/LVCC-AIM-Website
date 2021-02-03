@@ -6,8 +6,7 @@
   <link rel="shortcut icon" href="img/aim-logo.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
   <link rel="stylesheet" href="style.css">
   <style>
     .masthead {
@@ -22,7 +21,7 @@
     .title1 {
       color: #FFFFFF;
       text-align: center;
-      padding-top: 310px;
+      padding-top: 250px;
       padding-bottom: 310px;
     }
 
@@ -33,28 +32,33 @@
     .top-content {
       display: flex;
       margin-left: 32%;
-      padding-top: 80px;  
+      padding-top: 50px;  
       padding-bottom: 50px;  
     }
 
-    .fa-address-card-o {
-      font-size: 150px; 
-      color: #25438C;
+    .top-content img {
+      width: 180px;
+      height: 170px; 
     }
 
     .description {
-      padding-top: 20px;
-      padding-left: 60px;
+      padding-top: 35px;
+      padding-left: 40px;
+    }
+
+    form {
+      text-align: center;
     }
 
     .form-border {
       margin-left: 10%;
       margin-right: 10%;
-      padding-bottom: 25px; 
+      padding-bottom: 30px; 
     }
 
     .border {
       border: 1px solid !important;
+      border-radius: 3px;
     }
     .border-primary {
       border-color: #25438C !important; 
@@ -64,6 +68,7 @@
       padding-top: 10px;
       padding-left: 15px;
       padding-bottom: 10px;
+      height: 50px;
       width: 100%;
     }
 
@@ -75,6 +80,10 @@
       height: 300px;
     }
 
+    .button-spacing {
+      padding-bottom: 100px;
+    }
+
     input[type=button] {
       background-color: #FFFFFF;
       color: #25438C;
@@ -84,12 +93,17 @@
       padding-left: 55px;
     }
 
+    input[type=button]:hover {
+      background-color: #25438C;
+      color: #FFFFFF;
+    }
+
     @media screen and (max-width: 1245px) {
       .top-content {
         margin-left: 32%;
       }
       .title1 {
-      padding-top: 290px;
+      padding-top: 230px;
       padding-bottom: 290px;
       }
     }
@@ -99,7 +113,7 @@
         margin-left: 28%;
       }
       .title1 {
-      padding-top: 270px;
+      padding-top: 210px;
       padding-bottom: 270px;
       }
     }
@@ -109,7 +123,7 @@
         margin-left: 25%;
       }
       .title1 {
-      padding-top: 250px;
+      padding-top: 190px;
       padding-bottom: 250px;
       }
     }
@@ -119,7 +133,7 @@
         margin-left: 22%;
       }
       .title1 {
-      padding-top: 230px;
+      padding-top: 170px;
       padding-bottom: 230px;
       }
     }
@@ -129,7 +143,7 @@
         margin-left: 17%;
       }
       .title1 {
-      padding-top: 210px;
+      padding-top: 150px;
       padding-bottom: 210px;
       }
     }
@@ -139,7 +153,7 @@
         margin-left: 12%;
       }
       .title1 {
-      padding-top: 190px;
+      padding-top: 130px;
       padding-bottom: 190px;
       }
     }
@@ -149,7 +163,7 @@
         margin-left: 6%;
       }
       .title1 {
-      padding-top: 170px;
+      padding-top: 110px;
       padding-bottom: 170px;
       }
       }
@@ -180,43 +194,38 @@
       }
       .top-content{
         margin-left: 35%;
-    
+      }
+    }
   </style>
 </head>
 <body>
 <!-- Starting Navigation Bar -->
-  <nav>
-    <div class="logo">
-      <a class="items" href="index.html"><img src="img/aim-logo.png" alt="AIM Logo" height="40"></a>
-      <a class="items" href="index.html"><h3>Association of ICT Majors</h3></a>
-    </div>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-us.html">About Us</a></li>
-      <li><a href="events.html">Events & Activites</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a class="active" href="contact-us.html">Contact Us</a></li>
-    </ul>
-  </nav>
+<nav>
+  <div class="logo">
+    <a class="items" href="index.html"><img src="img/aim-logo.png" alt="AIM Logo" height="40"></a>
+    <a class="items-aim" href="index.html"><h3>Association of ICT Majors</h3></a>
+  </div>
+  <input type="checkbox" id="click">
+  <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+    <li><a href="events.html">Events & Activites</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a class="active" href="contact-us.html">Contact Us</a></li>
+  </ul>
+</nav>
 <!-- Ending Navigation Bar -->
 
 <!-- Starting Main Content -->
   <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="title1">Contact <span class="title1-2">Us</span></h1>
-        </div>
-      </div>
-    </div>
+    <h1 class="title1">Contact <span class="title1-2">Us</span></h1>
   </header>
 
-  <div class="top-content text-center">
-    <i class="fa fa-address-card-o" aria-hidden="true"></i>
+  <div class="top-content">
+    <img src="/img/contact-us/contact-icon.png">
     <div class="description">
       <h1 style="color: #25438C; padding-bottom: 5px;">Contact Us</h1>
       <p>
@@ -226,7 +235,7 @@
     </div>
   </div>
 
-  <form class="text-center">
+  <form>
     <div class="form-border">
       <input class="border border-primary rounded" type="text" placeholder="Your Name">  
     </div>  
@@ -236,8 +245,51 @@
     <div class="form-border">
       <textarea class="border border-primary rounded" placeholder="Message"></textarea>
     </div>
-    <input type="button" class="border border-primary rounded" value="SEND MESSAGE"></button>
+    <div class="button-spacing">
+      <input type="button" class="border border-primary rounded" value="SEND MESSAGE"></button>
+    </div>
   </form>
 <!-- Ending Main Content -->
+
+<!-- Footer -->
+<div class="footer">
+  <div class="foot">
+  <div class="foot-left">
+    <img src="img/aim-logo.png" alt="AIM Logo" height="100">
+    <h3>Association of ICT Majors</h3>
+  </div>
+  <div class="foot-right-hide">
+    <img src="img/lvcc_logo.png" alt="LVCC Logo" height="100">
+    <h3>La Verdad Christian College</h3>
+  </div>
+  <div class="foot-centered">
+    <div class="sub-footer">
+      <h3>Follow Us on:</h3>
+        <div class="wrapper">
+  
+            <div class="button">
+                <a href="https://www.facebook.com/headhunterhairstyling/" target="_blank"> <div class="icon"><i class="fab fa-facebook-f"></i> </div> </a>
+                   <a href="https://www.facebook.com/headhunterhairstyling/" target="_blank"> <span> Facebook </span> </a>  
+                </div>
+  
+            <div class="button">
+                <a href="https://twitter.com/HeadhunterHair" target="_blank"> <div class="icon"> <i class="fab fa-google"> </i> </div> </a>
+                   <a href="https://twitter.com/HeadhunterHair" target="_blank"> <span> Google Mail </span> </a>
+                </div>
+        </div>
+        <div class="foot-base">
+          <p class="base-items">Handcrafted by Shabu Shabu &nbsp;</p>
+          <p class="base-items">&#169; Copyright 2021. All rights reserved</p>
+        </div>
+    </div>
+  </div>
+  <div class="foot-right">
+  <img src="img/lvcc_logo.png" alt="LVCC Logo" height="100">
+  <h3>La Verdad Christian College</h3>
+  </div>
+  </div>
+  </div>
+
+
 </body>
 </html>
