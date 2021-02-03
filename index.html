@@ -11,10 +11,20 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <style>
+    @media only screen and (max-width: 540px) {
+      .carousel-cards span {
+        left: 10%;
+      }
+    }
+	  
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
       .carousel-cards div {
         min-width: 280px;
+      }
+	    
+      .carousel-cards span:nth-of-type(2) {
+        left: 80%;
       }
     }
 
@@ -29,6 +39,10 @@
     @media only screen and (min-width: 768px) {
       .carousel-cards div {
         min-width: 280px;
+      }
+	    
+      .carousel-cards span:nth-of-type(2) {
+        left: 88%;
       }
     } 
 
