@@ -23,9 +23,6 @@ a{
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    z-index: 999999999;
   }
   nav .logo{
     display: flex;
