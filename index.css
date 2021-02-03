@@ -1,4 +1,8 @@
 
+.aim-desc{
+ margin: 3% 0;
+}
+
 /* EVENTS */
  .row {
     display: flex;
@@ -18,11 +22,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px;
     text-align: center;
-    background-color: #C4C4C4;
-  }
-
-  .card img {
-    background-color: white;
   }
 
   .events-cards {
@@ -31,7 +30,7 @@
 
   .container {
     width: 90%;
-    margin: 50px auto;
+    margin: 0 auto;
   }
 
   .heading {
@@ -47,25 +46,18 @@
   }
 
   .card {
-    width: 20%;
-    height: 400px;
-    background: #C4C4C4;
+    width: 250px;
+    height: 415px;
     border: 1px solid #ccc;
     margin-bottom: 50px;
     padding: 1%;
     transition: 0.3s;
   }
 
-  /* .card-header {
-    padding: 10px 10px;
-  } */
-
   .card-header img {
     width: 100%;
     height: auto;
-    width: 220;
-    height: 150;
-    background: #fefefe;
+    margin: 1%;
   }
 
   .card-body {
@@ -104,6 +96,9 @@
       overflow: hidden;
       position: relative;
   }
+  .carousel-cards{
+    margin: 5% 0;
+  }
   .carousel-cards h2 {
       width: 98%;
       font-weight: bold;
@@ -118,6 +113,10 @@
       cursor: pointer;
       left: 5%;
       z-index: 1;
+      opacity: 50%;
+  }
+  .carousel-cards span:hover{
+    opacity: 100%;
   }
   .carousel-cards span:nth-of-type(2) {
       left: 90%;

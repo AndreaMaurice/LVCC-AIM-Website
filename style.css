@@ -67,42 +67,10 @@ a{
 
 /* BANNER */
 .banner{
-  padding-block: 17%;
-  padding-inline: 15%;
+  padding: 17% 15%;
   text-align: center;
 }
 
-  /* EVENTS */
-  .events{
-    text-align: center;
-    margin-block: 5%;
-    padding-block: 2%;
-    background-color: #f9f9f9;
-  }
-  .events-cards{
-    display: flex;
-    padding: auto;
-    padding-block: 30px;
-    padding-inline: 10%;
-  }
-  .events-cards:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    height: 350px;
-    text-align: center;
-    margin: auto;
-    background-color: white;
-  }
-
-  .card img {
-    background-color: white;
-  } 
 
   /* FOOT */  
   .footer{
@@ -112,14 +80,14 @@ a{
     align-items: center;
     bottom: 0;
     width: 100%;
-    padding-inline: 5%;
+    padding:0 5%;
     padding-block-start: 2%;
     padding-block-end: 1%;
     vertical-align: middle;
   }
   .foot{
     display: flex;
-    margin-block: 2.5%;
+    margin: 2.5% 0;
   }
   .foot-base{
     display: flex;
@@ -183,7 +151,7 @@ a{
   color: #fff;
 }
 .wrapper .button span{
-  margin-inline: 10px; 
+  margin: 0 10px; 
   transition: all .3s ease-out;
 }
 .wrapper .button:nth-child(1) span{
@@ -289,90 +257,134 @@ a{
 	height: 657px;
 }
 .page-title {
-	position: absolute;
-	width: 50%;
-	top: 45%;
-	margin: 0 auto;
-	padding: 20px;
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.about-color {
-	padding-right: 5px;
-	font-size: 48px;
-	font-weight: bold;
-	color: #fff;
+  padding: 23% 15%;
+  text-align: center;
+  color: white;
 }
 .us-color {
-	padding-left: 5px;
-	font-size: 48px;
-	font-weight: bold;
 	color: #10E0E3;
 }
-/*----------MISSION AND VISION SECTION----------*/
 .section-size {
 	width: 100%;
-	height: 657px;
-	padding: 135px 0px;
+	padding: 5% 0;
 }
+
 .mission-icon {
-	width: 180px;
-	height: 135px;
+	width: 20%;
 }
 .vision-icon {
-	height: 160px;
-	width: 160px;
+  width: 17%;
+  margin-left: 2%;
 }
 .mission-section {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-top: 5%;
-	margin-left: 150px;
+  padding: 1% 10%;
 }
 .vision-section {
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
-	margin-right: 150px;
-	margin-bottom: 10%;
+  align-items: center;
+  text-align: end;
+  padding: 1% 10%;
 }
 .section-title {
 	color: #25438C;
 }
-.section-definition {
-	font-size: 18px;
+.vision{
+  align-items: end;
 }
-/*----------Officer's Profile Design----------*/
+.section-definition {
+  font-size: 18px;
+  text-align: justify;
+}
+.obj{
+  background-image: linear-gradient(to right, #4844FC , #446CFC , #447BFC , #17D4E6);
+  padding: 5% 15%;
+}
+.obj-title{
+  color: white;
+}
+.prof{
+	padding: 5%;
+}
+.prof-title{
+  padding: 3%;
+  text-align: center;
+}
 .section-color {
-	background-image: linear-gradient(to right, #4844FC , #446CFC , #447BFC , #17D4E6);
 	width: 100%;
-	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.profile-wrapper {
-	padding: 50px;
+.profile-wrapper, .gal-wrapper{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+.profile-wrapper{
+  padding: 1% 3%;
+}
 .profile-photo {
 	object-fit: cover;
-	width: 150px;
-	height: 200px;
+	width: 250px;
+	height: 300px;
 }
-.profile-wrapper span p {
+.profile-wrapper span p, .obj-title {
 	text-align: center;
 }
 
+/* Gallery */
+.gal-title{
+  text-align: center;
+  margin: 10% auto;
+}
+.gal-wrapper{
+  margin: 2px;
+}
+.gal {
+  margin-bottom: 5%;
+}
 
-
-
+@media only screen and (max-width: 1220px){
+  .events-page, .about-us, .masthead{
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 970px){
+  .events-page, .about-us, .masthead{
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 880px){
+  .events-page, .about-us, .masthead{
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 770px){
+  .events-page, .about-us, .masthead{
+    height: 350px;
+  }
+  .mission-icon, .vision-icon{
+    display: none;
+  }
+  .section-title{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 560px){
+  .events-page, .about-us, .masthead{
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 480px){
+  .events-page, .about-us, .masthead{
+    height: 250px;
+  }
+}
 
 
 
