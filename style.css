@@ -279,19 +279,16 @@ a{
 
 
 /*----------ABOUT US----------*/
-.about-us {
-  background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("/img/about-us-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  z-index: 999999;
+.about-us-bg {
+	width: 100%;
 	height: 657px;
 }
 .page-title {
 	position: absolute;
 	width: 50%;
 	top: 45%;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
@@ -311,6 +308,11 @@ a{
 	font-weight: bold;
 	color: #10E0E3;
 }
+
+
+
+
+
 /*----------MISSION AND VISION SECTION----------*/
 .section-size {
 	width: 100%;
@@ -320,10 +322,12 @@ a{
 .mission-icon {
 	width: 180px;
 	height: 135px;
+	padding: 8px;
 }
 .vision-icon {
 	height: 160px;
 	width: 160px;
+	padding: 8px;
 }
 .mission-section {
 	display: flex;
@@ -331,6 +335,7 @@ a{
 	align-items: center;
 	margin-top: 5%;
 	margin-left: 150px;
+	margin-bottom: 10px;
 }
 .vision-section {
 	display: flex;
@@ -344,9 +349,30 @@ a{
 }
 .section-definition {
 	font-size: 18px;
+	width: 500px;
 }
-/*----------Officer's Profile Design----------*/
-.section-color {
+
+
+
+
+
+/*----------Objective----------*/
+.objective {
+	width: 70%;
+	margin: 0 auto;
+	padding: 5%;
+}
+.objective-title {
+	color: #25438C;
+	text-align: center;
+	padding: 13px;
+}
+
+
+
+
+/*----------Offer's Profile Design----------*/
+.profile-color {
 	background-image: linear-gradient(to right, #4844FC , #446CFC , #447BFC , #17D4E6);
 	width: 100%;
 	padding: 20px;
@@ -365,10 +391,86 @@ a{
 	object-fit: cover;
 	width: 150px;
 	height: 200px;
+	margin-bottom:  5px;
 }
 .profile-wrapper span p {
 	text-align: center;
 }
+
+
+
+
+
+-------------------------------------------------
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 660px) {
+	.profile-color {
+		padding: 15px;
+	}
+	.profile-wrapper {
+		padding: 15px;
+	}
+	.profile-photo {
+		width: 120px;
+		height: 170px;
+		object-fit: cover;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 785px) {
+	.section-size {
+		height: 400px;
+	}
+	.mission-section {
+		margin-left: 60px;
+	}
+	.vision-section {
+		margin-right: 60px;
+		margin-bottom: 10px;
+	}
+
+	/*---------------*/
+	.section-color {
+		padding: 5px;
+	}
+	.profile-wrapper {
+		padding: 25px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.section-definition {
+		width: 400px;
+	}
+	.section-size {
+		height: 300px;
+		padding: 100px 0px;
+	}
+	.vision-section {
+		margin-top: 35px;
+		margin-bottom: 0;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+	.section-size {
+		height: 580px;
+	}
+	.mission-section {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.vision-section {
+		margin-bottom: 0;
+	}
+}
+
+
+
+
 
 
 
