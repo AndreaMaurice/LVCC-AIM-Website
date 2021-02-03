@@ -11,29 +11,61 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <style>
+    @media only screen and (max-width: 540px) {
+      .carousel-cards span {
+        left: 10%;
+      }
+    }
+	  
     /* Extra small devices (phones, 600px and down) */
-	@media only screen and (max-width: 600px) {
-	  
-	}
+    @media only screen and (max-width: 600px) {
+      .carousel-cards div {
+        min-width: 280px;
+      }
+	    
+      .carousel-cards span:nth-of-type(2) {
+        left: 80%;
+      }
+    }
 
-	/* Small devices (portrait tablets and large phones, 600px and up) */
-	@media only screen and (min-width: 600px) {
-	  
-	}
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .carousel-cards div {
+        min-width: 280px;
+      }
+    }
 
-	/* Medium devices (landscape tablets, 768px and up) */
-	@media only screen and (min-width: 768px) {
-	  
-	} 
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .carousel-cards div {
+        min-width: 280px;
+      }
+	    
+      .carousel-cards span:nth-of-type(2) {
+        left: 88%;
+      }
+    } 
 
-	/* Large devices (laptops/desktops, 992px and up) */
-	@media only screen and (min-width: 992px) {
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .carousel-cards div {
+        min-width: 198px;
+      }
+    } 
 
-	} 
+    /* iPad Pro (1024px and up) */
+    @media only screen and (min-width: 992px) {
+      .carousel-cards div {
+        min-width: 206px;
+      }
+    } 
 
-	/* Extra large devices (large laptops and desktops, 1200px and up) */
-	@media only screen and (min-width: 1200px) {
-	}
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .carousel-cards div {
+        min-width: 225px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -105,7 +137,7 @@
   </div>
 
   <div class="row">
-    <div class="card">
+    <div class="card-home">
       <div class="card-header">
         <img src="img/events/giphy.gif" alt="">
       </div>
@@ -117,7 +149,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card-home">
       <div class="card-header">
         <img src="img/events/y4it.jpg" alt="">
       </div>
@@ -129,7 +161,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card-home">
       <div class="card-header">
         <img src="img/lvcc_logo.png" alt="">
       </div>
@@ -141,7 +173,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card-home">
       <div class="card-header">
         <img src="img/lvcc_logo.png" alt="">
       </div>
