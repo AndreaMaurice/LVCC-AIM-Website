@@ -222,6 +222,9 @@ a{
   .foot{
   display: block;
   }
+  .side{
+    display: flex;
+  }
   .foot-left, .foot-centered, .foot-right-hide{
     margin-top: 7%;
   }
@@ -240,16 +243,21 @@ a{
 }
 
 @media screen and (max-width: 660px){
-  .foot-base{
+  .foot-base, .side{
     display: block;
   }
 }
 
 
 /*----------ABOUT US----------*/
-.about-us-bg {
-	width: 100%;
-	height: 657px;
+.about-us {
+  background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("img/about-us-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  z-index: 999999;
 }
 .page-title {
   padding: 23% 15%;
@@ -265,12 +273,18 @@ a{
 }
 
 .mission-icon {
+	width: 20%;
 }
 .vision-icon {
   width: 17%;
   margin-left: 2%;
 }
-
+.mission-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  padding: 1% 10%;
+}
 .vision-section {
 	display: flex;
 	flex-direction: row-reverse;
@@ -374,74 +388,6 @@ a{
     height: 250px;
   }
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 660px) {
-	.profile-color {
-		padding: 15px;
-	}
-	.profile-wrapper {
-		padding: 15px;
-	}
-	.profile-photo {
-		width: 120px;
-		height: 170px;
-		object-fit: cover;
-	}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 785px) {
-	.section-size {
-		height: 400px;
-	}
-	.mission-section {
-		margin-left: 60px;
-	}
-	.vision-section {
-		margin-right: 60px;
-		margin-bottom: 10px;
-	}
-
-	/*---------------*/
-	.section-color {
-		padding: 5px;
-	}
-	.profile-wrapper {
-		padding: 25px;
-	}
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-	.section-definition {
-		width: 400px;
-	}
-	.section-size {
-		height: 300px;
-		padding: 100px 0px;
-	}
-	.vision-section {
-		margin-top: 35px;
-		margin-bottom: 0;
-	}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-	.section-size {
-		height: 580px;
-	}
-	.mission-section {
-		margin-top: 0;
-		margin-bottom: 20px;
-	}
-	.vision-section {
-		margin-bottom: 0;
-	}
-}
-
-
 
 
 
