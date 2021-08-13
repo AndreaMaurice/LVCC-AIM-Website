@@ -12,204 +12,93 @@
     .masthead {
       width: 100%; 
       height: auto;
-      background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/contact-us/header.jpg");
+      background-image: url("/img/join-us/header.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
 
-    .title1 {
+    .heading {
       color: #FFFFFF;
       text-align: center;
-      padding-top: 250px;
-      padding-bottom: 310px;
+      padding-top: 150px;
+      padding-bottom: 150px;
     }
-
-    .title1-2 {
-      color: #10E0E3;
-    }
-
-    .top-content {
-      display: flex;
-      margin-left: 32%;
-      padding-top: 50px;  
-      padding-bottom: 50px;  
-    }
-
-    .top-content img {
-      width: 180px;
-      height: 170px; 
-    }
-
-    .description {
-      padding-top: 35px;
-      padding-left: 40px;
-    }
-
-    form {
+    .form {
       text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
-    .form-border {
-      margin-left: 10%;
-      margin-right: 10%;
-      padding-bottom: 30px; 
-    }
-
-    .border {
-      border: 1px solid !important;
-      border-radius: 3px;
-    }
-    .border-primary {
-      border-color: #25438C !important; 
-    }
-
-    input[type=text] {
-      padding-top: 10px;
-      padding-left: 15px;
-      padding-bottom: 10px;
-      height: 50px;
-      width: 100%;
-    }
-
-    textarea {
-      padding-top: 10px;
-      padding-right: 15px;
-      padding-left: 15px;
-      width: 100%;
-      height: 300px;
-    }
-
-    .button-spacing {
-      padding-bottom: 100px;
-    }
-
-    input[type=button] {
-      background-color: #FFFFFF;
-      color: #25438C;
-      padding-top: 23px;
-      padding-right: 55px;
-      padding-bottom: 23px;
-      padding-left: 55px;
-    }
-
-    input[type=button]:hover {
-      background-color: #25438C;
-      color: #FFFFFF;
+    p {
+      text-align: center;
+      padding-bottom: 30px;
     }
 
     @media screen and (max-width: 1245px) {
-      .top-content {
-        margin-left: 32%;
-      }
-      .title1 {
-      padding-top: 230px;
-      padding-bottom: 290px;
+      .heading {
+      padding-top: 140px;
+      padding-bottom: 140px;
       }
     }
 
     @media screen and (max-width: 1090px) {
-      .top-content {
-        margin-left: 28%;
-      }
-      .title1 {
-      padding-top: 210px;
-      padding-bottom: 270px;
+      .heading {
+      padding-top: 130px;
+      padding-bottom: 130px;
       }
     }
 
     @media screen and (max-width: 1015px) {
-      .top-content {
-        margin-left: 25%;
-      }
-      .title1 {
-      padding-top: 190px;
-      padding-bottom: 250px;
+      .heading {
+      padding-top: 120px;
+      padding-bottom: 120px;
       }
     }
 
     @media screen and (max-width: 940px) {
-      .top-content {
-        margin-left: 22%;
-      }
-      .title1 {
-      padding-top: 170px;
-      padding-bottom: 230px;
+      .heading {
+      padding-top: 110px;
+      padding-bottom: 110px;
       }
     }
 
     @media screen and (max-width: 865px) {
-      .top-content {
-        margin-left: 17%;
-      }
-      .title1 {
-      padding-top: 150px;
-      padding-bottom: 210px;
+      .heading {
+      padding-top: 100px;
+      padding-bottom: 100px;
       }
     }
 
     @media screen and (max-width: 790px) {
-      .top-content {
-        margin-left: 12%;
-      }
-      .title1 {
-      padding-top: 130px;
-      padding-bottom: 190px;
-      }
-    }
-    
-    @media screen and (max-width: 768px) {
-      .top-content {
-        margin-left: 22%;
+      .heading {
+      padding-top: 90px;
+      padding-bottom: 90px;
       }
     }
 
-    @media screen and (max-width: 640px) {
-      .top-content {
-        margin-left: 6%;
-      }
-      .title1 {
-      padding-top: 110px;
-      padding-bottom: 170px;
-      }
-      }
-    
 
+    @media screen and (max-width: 715px) {
+      .heading {
+      padding-top: 75px;
+      padding-bottom: 75px;
+      }
+    }
+
+    @media screen and (max-width: 565px) {
+      .heading {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      }
+    }
 
     @media screen and (max-width: 490px) {
-      .description {
-        display: none;
-      }
-      .top-content{
-        margin-left: 30%;
+      .heading {
+      padding-top: 50px;
+      padding-bottom: 50px;
       }
     }
-
-    @media screen and (max-width: 360px) {
-      .description {
-        display: none;
-      }
-      .top-content{
-        margin-left: 25%;
-      }
-    }
-
-    @media screen and (max-width: 510px) {
-      .description {
-        display: none;
-      }
-      
-      .top-content {
-        margin-left: auto;
-        margin-right: auto; 
-      }
-      
-      .top-content img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
-      }
-    }
+ 
   </style>
 </head>
 <body>
@@ -235,36 +124,16 @@
 
 <!-- Starting Main Content -->
   <header class="masthead">
-    <h1 class="title1">Contact <span class="title1-2">Us</span></h1>
+    <div class="heading"></div>
   </header>
 
-  <div class="top-content">
-    <img src="/img/contact-us/contact-icon.png">
-    <div class="description">
-      <h1 style="color: #25438C; padding-bottom: 5px;">Contact Us</h1>
-      <p>
-        For comments/suggestions, <br>
-        feel free to contact us here:
-      </p>
-    </div>
-  </div>
+  <div class="form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYhbcTkgnaWll_rim6TNcnpSgWPHds9-M6H8foTNfWF1N7jg/viewform?embedded=true" width="700" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe><!-- Ending Main Content -->
+  </div> 
 
-  <form>
-    <div class="form-border">
-      <input class="border border-primary rounded" type="text" placeholder="Your Name">  
-    </div>  
-    <div class="form-border">
-      <input class="border border-primary rounded" type="text" placeholder="Enter Email">    
-    </div>
-    <div class="form-border">
-      <textarea class="border border-primary rounded" placeholder="Message"></textarea>
-    </div>
-    <div class="button-spacing">
-      <input type="button" class="border border-primary rounded" value="SEND MESSAGE"></button>
-    </div>
-  </form>
-<!-- Ending Main Content -->
-
+  <p>
+    For comments/suggestions, feel free to contact us here.
+  </p>
 <!-- Footer -->
 <div class="footer">
   <div class="foot">
