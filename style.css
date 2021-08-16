@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -11,6 +14,7 @@ font-family: 'Sora', sans-serif;
 }
 a{
   text-decoration: none;
+  color: #000;
 }
 
 /* Nav */
@@ -18,11 +22,17 @@ a{
     display: flex;
     height: 80px;
     width: 100%;
-    background: #25438C;
+    background: #ffff;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 100px;
+    padding: 1% 5%;
     flex-wrap: wrap;
+    z-index: 100;
+  }
+  .navi{
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
   }
   nav .logo{
     display: flex;
@@ -30,7 +40,7 @@ a{
     color: #fff;
   }
   .logo a{
-    color: white;
+    color: #000;
     margin-right: 10px;
   }
 
@@ -43,19 +53,19 @@ a{
     margin: 0 5px;
   }
   nav ul li a{
-    color: #f2f2f2;
+    color: #000;
     text-decoration: none;
     padding: 8px 15px;
     transition: all 0.3s ease;
   }
   nav ul li a.active{
-    color: cyan;
+    border-bottom: 3px solid deepskyblue;
   }
   nav ul li a:hover{
-    color: #C4C4C4;
+    color: deepskyblue;
   }
   nav .menu-btn i{
-    color: #fff;
+    color: black;
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -67,8 +77,125 @@ a{
 
 /* BANNER */
 .banner{
-  padding: 17% 15%;
+  padding: 6% 5% 10% 5%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+.banner .text{
+  flex: 1.7;
+}
+.banner .photo{
+  flex: 1;
   text-align: center;
+  align-self: center;
+}
+#title-1, #title-2 {
+  font-family: 'Sora';
+  font-weight: 800;
+  line-height: 1.1;
+}
+#title-1 {
+  font-size: 100px;
+}
+#title-2 {
+  font-size: 70px;
+  color: #4844FC;
+}
+.aim-desc{
+  margin-top: 30px;
+  margin-right: 30px;
+  font-size: large;
+  color: #555555;
+ }
+
+ /* EVENTS FLUID */
+ .events-fluid{
+   padding: 6%;
+  display: flex;
+  flex-direction: row;
+ }
+ .e-cards{
+   flex: 1;
+   background-color: rgb(239, 253, 255);
+   margin: .7%;
+   padding: 2%;
+   height: 270px;
+   border-radius: 5px;
+   position: relative;
+ }
+ .e-cards:hover, .oi-cards:hover{
+  transform: translate3d(0px, -5px, 0px) !important;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s !important;
+ }
+ .e-text{
+   text-align: center;
+   height: 120px;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+ }
+.e-icons{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  align-items: center;
+  width: 80%;
+}
+.e-photo{
+  flex: 1.5;
+  text-align: center;
+  margin-right: 10px;
+}
+.e-title{
+  flex: 2;
+}
+.e-expand{
+  text-align: right;
+}
+.e-expand i:hover{
+color: #4844FC;
+}
+.e-sub{
+  font-weight: lighter;
+  color: #494949;
+}
+.events-title, .officers-title
+{
+  text-align: center;
+}
+
+/* OFFICERS & INSTRUCTORS */
+.officers-title{
+  margin-top: 5%;
+}
+.officers-fluid{
+  padding: 7% 5%;
+ display: flex;
+ flex-direction: row;
+}
+.oi-cards{
+  flex: 1;
+  background-color: rgb(220, 209, 224);
+  margin: .7%;
+  padding: 1%;
+  height: 270px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.oi-photo{
+  flex: 2;
+}
+.oi-text{
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -174,6 +301,7 @@ a{
 @media screen and (max-width: 1080px) {
   nav .menu-btn i{
     display: block;
+    color: black;
   }
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
@@ -182,7 +310,7 @@ a{
     position: fixed;
     top: 80px;
     left: -100%;
-    background: #25438C;
+    background-color: #fff;
     width: 100%;
     text-align: center;
     display: block;
@@ -199,15 +327,16 @@ a{
     width: 100%;
     margin-left: -100%;
     display: block;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   #click:checked ~ ul li a{
     margin-left: 0px;
   }
   nav ul li a.active,
   nav ul li a:hover{
+    border: none;
     background: none;
-    color: cyan;
+    color: deepskyblue;
   }
 }
 @media screen and (max-width: 440px){
