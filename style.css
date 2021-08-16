@@ -81,32 +81,47 @@ a{
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 3% 5% 0 5%;
+  padding: 3% 2% 2% 2%;
 }
-.footer-cont{
-  width: 50%;
-}
-.link-cont{
+.footer-title{
+  width: 30%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.link-cont{
+  align-items: center;
   padding: 1%;
+  width: 30%;
 }
 .footer-links{
-  flex: 1;
   border: 2px solid black;
   margin: 2%;
-  border-radius: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-links.f:hover{
 background-color: dodgerblue;
 }
 .footer-links.g:hover{
-  background-color: #7d7bfa;;
+  background-color: #9e9df8;;
 }
 .footer-links.l:hover{
   background-color: deepskyblue;
 }
-
+.footer-links.a:hover{
+  background-color: rgb(248, 153, 153);
+}
+.link-row{
+  display: flex;
+}
+.footer-links i{
+  font-size: 50px;
+}
 /* -------------- E-N-D  FOOTER ---------------- */
 
 /* ---------------------- H-O-M-E-P-A-G-E ---------------------- */
