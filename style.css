@@ -444,7 +444,7 @@ background-color: rgb(169, 239, 248);
 
 /*----------ABOUT US----------*/
 .about-us {
-  background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("img/about-us-bg.jpg");
+  background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("img/about-us/about-us-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -502,35 +502,76 @@ background-color: rgb(169, 239, 248);
 .obj-title{
   color: white;
 }
-.prof{
-	padding: 5%;
+
+/* Carousel */
+main {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
 }
-.prof-title{
-  padding: 3%;
+main section div:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.carousel-cards{
+margin: 5% 0;
+}
+.carousel-cards h2 {
+  width: 98%;
+  font-weight: bold;
   text-align: center;
 }
-.section-color {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
+.carousel-cards span {
+  position: absolute;
+  top: 45%;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  left: 5%;
+  z-index: 1;
+  opacity: 50%;
 }
-.profile-wrapper, .gal-wrapper{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.carousel-cards span:hover{
+opacity: 100%;
 }
-.profile-wrapper{
-  padding: 1% 3%;
+.carousel-cards span:nth-of-type(2) {
+  left: 90%;
+  text-align: right;
+  z-index: 1;
 }
-.profile-photo {
-	object-fit: cover;
-	width: 250px;
-	height: 300px;
+.carousel-cards section {
+  width: 98%;
+  height: 300px;
+  /* background: #f4f4f4; */
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
 }
-.profile-wrapper span p, .obj-title {
-	text-align: center;
+.carousel-cards section::-webkit-scrollbar {
+  visibility: hidden;
+}
+.carousel-cards div {
+  min-width: 225px;
+  height: 250px;
+  position: relative;
+  left: 0;
+  text-align: center;
+  padding-top: 0px;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 10px 20px;
+  color: white;
+  background: #C4C4C4;
+  transition: 0.5s;
+}
+.row div {
+  color: black;
+}
+section {
+  padding-left: 100px;
 }
 
 /* Gallery */
