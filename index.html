@@ -9,71 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="index.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <style>
-    /* Extra small devices (phones, 600px and down) */
-	@media only screen and (max-width: 600px) {
-	  
-	}
-
-	/* Small devices (portrait tablets and large phones, 600px and up) */
-	@media only screen and (min-width: 600px) {
-	  
-	}
-
-	/* Medium devices (landscape tablets, 768px and up) */
-	@media only screen and (min-width: 768px) {
-	  
-	} 
-
-	/* Large devices (laptops/desktops, 992px and up) */
-	@media only screen and (min-width: 992px) {
-
-	} 
-
-	/* Extra large devices (large laptops and desktops, 1200px and up) */
-	@media only screen and (min-width: 1200px) {
-	}
-  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<!-- Floating Particles -->
-<div id="particle-container">
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle-circle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-	<div class="particle"></div>
-  <div class="particle"></div>
-</div>
-
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="navi">
     <div class="logo">
       <a href="index.html"><img src="img/aim-logo.png" alt="AIM Logo" height="40"></a>
       <a class="items-aim" href="index.html"><h3>Association of ICT Majors</h3></a>
@@ -93,75 +33,100 @@
 
 <!-- Banner -->
 <div class="banner">
-<h1>We <strong style="color: #4479FC;">A</strong><strong style="color: #83A6FF;">I</strong><strong style="color: #A827FE">M</strong> high, Dream high!</h1>
-<h3 class="aim-desc">Association of ICT Majors also known as AIM, is an organization inside La Verdad Christian College Apalit, Pampanga. This organization's members are the LVCC's IT Majors' Students and Professors. </h3>
+  <div class="text" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+    <p id="title-1" class="animate flash">LVCC</p>
+    <p id="title-2">Association of ICT Majors</p>
+    <p class="aim-desc">This organization aims to provide holistic support to ICT majors for enhancing their skills and producing highly competent, disciplined and professional graduates. We envision to be a school organization that looks after the welfare of ICT Majors in line with the school's thrust of supporting academic excellence and upholding moral standards.</p>    
+  </div>
+  <div class="photo" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+    <img src="img/aim-logo.png" alt="AIM Logo" height="400">
+  </div>
 </div>
-
 
 <!-- Events -->
-<div class="container">
-  <div class="heading">
-    <h2>Events</h2>
-  </div>
-
-  <div class="row">
-    
+<div class="events-title" data-aos="fade-up" data-aos-duration="1000">
+  <h1>EVENTS</h1>
+</div>
+<div class="events-fluid">
+  <div class="e-cards" data-aos="fade-up" data-aos-duration="1500">
     <a href="events.html#ictweek">
-    <div class="card">
-      <div class="card-header">
-        <img src="img/events/giphy.gif" alt="">
+    <div class="e-expand">
+      <i class="fas fa-external-link-alt"></i>
+    </div>
+    <div class="e-text">
+      <p>Annual event celebrated by students of ICT Majors.</p>
+    </div>
+    <div class="e-icons">
+      <div class="e-photo">
+        <img src="img/events/ictweek.png" alt="ICT WEEK Logo" height="70px">
       </div>
-      <div class="card-body">
-        <p>
-          <strong>ICT WEEK</strong><br>
-          An annual event celebrated by students of ICT Majors.
-        </p>
+      <div class="e-title">
+        <h3>ICT WEEK</h3>
+        <p class="e-sub">AIM Event</p>
       </div>
     </div>
   </a>
-  <a href="events.html#y4it">
-    <div class="card">
-      <div class="card-header">
-        <img src="img/events/y4it.jpg" alt="">
+  </div>
+  <div class="e-cards" data-aos="fade-up" data-aos-duration="2000">
+    <a href="events.html#y4it">
+      <div class="e-expand">
+        <i class="fas fa-external-link-alt"></i>
       </div>
-      <div class="card-body">
-        <p>
-    <strong>Y4IT</strong><br>
-    An event organized by UP System Information Technology Foundation for IT professionals and enthusiasts.
-        </p>
+      <div class="e-text">
+        <p>An event organized by UP System Information Technology Foundation for IT professionals and enthusiasts.</p>
       </div>
-    </div>
-  </a>
-  <a href="events.html#foundation">
-    <div class="card">
-      <div class="card-header">
-        <img src="img/lvcc_logo.png" alt="">
+      <div class="e-icons">
+        <div class="e-photo">
+          <img src="img/events/y4it.png" alt="Y4ITLogo" height="70px">
+        </div>
+        <div class="e-title">
+          <h3>Youth 4 IT</h3>
+          <p class="e-sub">UPSITF Event</p>
+        </div>
       </div>
-      <div class="card-body">
-        <p>
-    <strong>LVCC Foundation Week</strong><br>
-          An event where all students of LVCC Apalit celebrate the foundation of the school.
-        </p>
-      </div>
-    </div>
-  </a>
-    <a href="events.html#wika">
-    <div class="card">
-      <div class="card-header">
-        <img src="img/lvcc_logo.png" alt="">
-      </div>
-      <div class="card-body">
-        <p>
-    <strong>Buwan ng Wika</strong><br>
-          This event is inline with commemorating our nation language which is Filipino.
-        </p>
-      </div>
-    </div>
     </a>
+  </div>
+  <div class="e-cards" data-aos="fade-up" data-aos-duration="2500">
+    <a href="events.html#foundation">
+      <div class="e-expand">
+        <i class="fas fa-external-link-alt"></i>
+      </div>
+      <div class="e-text">
+        <p>An event where all students of LVCC Apalit celebrate the foundation of the school.</p>
+      </div>
+      <div class="e-icons">
+        <div class="e-photo">
+          <img src="img/lvcc_logo.png" alt="LV Logo" height="70px">
+        </div>
+        <div class="e-title">
+          <h3>Foundation Week</h3>
+          <p class="e-sub">LVCC Event</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="e-cards" data-aos="fade-up" data-aos-duration="3000">
+    <a href="events.html#wika">
+    <div class="e-expand">
+      <i class="fas fa-external-link-alt"></i>
+    </div>
+    <div class="e-text">
+      <p>This event is inline with the commemoration of our nation language, Filipino.</p>
+    </div>
+    <div class="e-icons">
+      <div class="e-photo">
+        <img src="img/lvcc_logo.png" alt="LV Logo" height="70px">
+      </div>
+      <div class="e-title">
+        <h3>Buwan ng Wika</h3>
+        <p class="e-sub">LVCC Event</p>
+      </div>
+    </div>
+  </a>
   </div>
 </div>
 
-<main class="carousel-cards">
+<!-- <main class="carousel-cards">
   <h2>Officers' Profile</h2>
   <br>
   <br>
@@ -181,11 +146,61 @@
     <a href="about-us.html#10"><div class="div"><img src="img/josan.jpg" alt="Josan Sayo" width="225" height="250" style="object-fit: cover;"></div></a>
     <a href="about-us.html#11"><div class="div"><img src="img/ace.png" alt="Ace Icban" width="225" height="250" style="object-fit: cover;"></div></a>
   </section>
-</main>
+</main> -->
 
+<!-- OFFICERS & INSTRUCTORS -->
+<div class="officers-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+  <h1>OFFICERS & INSTRUCTORS PROFILE</h1>
+</div>
+<div class="officers-fluid">
+  <div class="oi-cards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+    <a href="about-us#instructors">
+    <div class="oi-photo">
+      <img src="img/home/instructors.jpg" alt="Instructors" height="170">
+    </div>
+    <div class="oi-text">
+      <h3>Instructors</h3>
+      <p class="oi-sub">BSIS & ACT</p>
+    </div>
+  </a>
+  </div>
+  <div class="oi-cards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+    <a href="about-us#instructors">
+    <div class="oi-photo">
+      <img src="img/home/2018.jpg" alt="2018 AIM" width="250">
+    </div>
+    <div class="oi-text">
+      <h3>2018</h3>
+      <p class="oi-sub">AIM Officers</p>
+    </div>
+  </a>
+  </div>
+  <div class="oi-cards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1600">
+    <a href="about-us#instructors">
+    <div class="oi-photo">
+      <img src="img/home/2019.jpg" alt="2019 AIM" width="250">
+    </div>
+    <div class="oi-text">
+      <h3>2019</h3>
+      <p class="oi-sub">AIM Officers</p>
+    </div>
+  </a>
+  </div>
+  <div class="oi-cards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1800">
+    <a href="about-us#2020">
+    <div class="oi-photo">
+      <img src="img/home/2020.jpg" alt="2020 AIM" width="250">
+    </div>
+    <div class="oi-text">
+      <h3>2020</h3>
+      <p class="oi-sub">AIM Officers</p>
+    </div>
+  </a>
+  </div>
+</div>
 
 <!-- Footer -->
-<div class="footer">
+<!-- <div class="footer">
 <div class="foot">
   <div class="side">
   <div class="foot-left">
@@ -223,67 +238,25 @@
 <h3>La Verdad Christian College</h3>
 </div>
 </div>
-</div>
+</div> -->
   
   
 	
 	
 
-  <!-- 
-
-  <img src="img/sample-profile.png" alt="" height="250" style="border-radius: 50%; background-color: black; margin-left: 20%;">
-  <div style="float: right; text-align: center;">
-    <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</h4>
-    <h3>Ms. Sharene Labung</h3>
-  </div>-->
-<!--  margin-left: 46%; margin-top: -15%; margin-right: 20%; -->
-<!-- margin-left: 20%; margin-top: 5%; margin-right: 46%; 
-
-  <img src="img/sample-profile.png" alt="" height="250" style="border-radius: 50%; background-color: black; float: right; margin-right: 20%;">
-  <div style="text-align: center;">
-    <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</h4>
-    <h3>Mr. Romack Natividad</h3>
-  </div>
--->
+ 
 
   
 
 
   
-
-<script type="text/javascript">
-  var span = document.getElementsByClassName('span');
-  var div = document.getElementsByClassName('div');
-  var l = 0;
-  span[1].onclick = ()=>{
-      l++;
-      for(var i of div)
-      {
-          if (l==0) {i.style.left = "0px";}
-          if (l==1) {i.style.left = "-265px";}
-          if (l==2) {i.style.left = "-530px";}
-          if (l==3) {i.style.left = "-795px";}
-          if (l==4) {i.style.left = "-1060px";}
-          if (l==5) {i.style.left = "-1325px";}
-          if (l==6) {i.style.left = "-1590px";}
-          if (l>6) {l=6;}
-      }
-  }
-  span[0].onclick = ()=>{
-      l--;
-      for(var i of div)
-      {
-          if (l==0) {i.style.left = "0px";}
-          if (l==1) {i.style.left = "-265px";}
-          if (l==2) {i.style.left = "-530px";}
-          if (l==3) {i.style.left = "-795px";}
-          if (l==4) {i.style.left = "-1060px";}
-          if (l==5) {i.style.left = "-1325px";}
-          if (l==6) {i.style.left = "-1590px";}
-          if (l<0) {l=0;}
-      }
-  }
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
+
 
 
 </body>
