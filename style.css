@@ -441,8 +441,7 @@ background-color: rgb(169, 239, 248);
   }
 }
 
-
-/*----------ABOUT US----------*/
+/* ---------------------- S-T-A-R-T A-B-O-U-T U-S ---------------------- */
 .about-us {
   background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("img/about-us/about-us-bg.jpg");
   background-size: cover;
@@ -573,8 +572,10 @@ opacity: 100%;
 section {
   padding-left: 100px;
 }
+/* ---------------------- E-N-D A-B-O-U-T U-S ---------------------- */
 
-/* Gallery */
+
+/* ---------------------- S-T-A-R-T G-A-L-L-E-R-Y ---------------------- */
 .gal-title{
   text-align: center;
   margin: 15% auto 10% auto;
@@ -622,3 +623,4 @@ section {
     height: 250px;
   }
 }
+/* ---------------------- E-N-D G-A-L-L-E-R-Y ---------------------- */
