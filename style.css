@@ -97,8 +97,8 @@ a{
 .footer-links{
   border: 2px solid black;
   margin: 2%;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -310,70 +310,8 @@ background-color: rgb(169, 239, 248);
   display: none;
 }
 
-/* Social Media Buttons */
-.sub-footer {
-  display: grid;
-  place-items: center;
-}
-.wrapper .button{
-  color: #446CFC;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 0 10px;
-  overflow: hidden;
-  background: white;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-  transition: all .3s ease-out;
-}
-.wrapper .button:hover{
-  width: auto;
-}
-.wrapper .button .icon{
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:nth-child(1):hover .icon{
-  background: #446CFC;
-}
-.wrapper .button:nth-child(2):hover .icon{
-  background: #446CFC;
-}
 
-.wrapper .button .icon i{
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon i{
-  color: #fff;
-}
-.wrapper .button span{
-  margin: 0 10px; 
-  transition: all .3s ease-out;
-}
-.wrapper .button:nth-child(1) span{
-  color: blue;
-}
-.wrapper .button:nth-child(2) span{
-  color: blue;
-}
-
-.icon{
-  color: #446CFC;
-}
-.wrapper{
-  margin-top: 10px;
-}
-
+/* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
 @media screen and (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
@@ -455,6 +393,7 @@ background-color: rgb(169, 239, 248);
     display: block;
   }
 }
+/* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
 
 /* ---------------------- S-T-A-R-T A-B-O-U-T U-S ---------------------- */
 .about-us {
@@ -639,3 +578,121 @@ section {
   }
 }
 /* ---------------------- E-N-D G-A-L-L-E-R-Y ---------------------- */
+
+/* --------------- JOIN US ----------------- */
+.masthead {
+  width: 100%; 
+  height: auto;
+  background-image: url("/img/join-us/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heading {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.form {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+iframe {
+    width: 700px;
+    height: 750px;
+  }
+
+@media screen and (max-width: 1245px) {
+  .heading {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  }
+  iframe {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .heading {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  }
+  iframe {
+    width: 675px;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .heading {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  }
+  iframe {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .heading {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  }
+  iframe {
+    width: 625px;
+  }
+}
+@media screen and (max-width: 865px) {
+  .heading {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  }
+  iframe {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .heading {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  }
+  iframe {
+    width: 575px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .heading {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  }
+  iframe {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .heading {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
+  iframe {
+    width: 525px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .heading {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+  iframe {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .heading {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+  iframe {
+    width: 475px;
+  }
+}
+
+/* ---------------- END JOIN US ------------------- */
