@@ -3,11 +3,15 @@
 <head>
   <title>Association of ICT Majors</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AIM Logo -->
   <link rel="shortcut icon" href="img/aim-logo.png" type="image/x-icon">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
+  <!-- Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style> 
   /* Style the Image Used to Trigger the Modal */
     .myImg {
@@ -228,32 +232,17 @@
   </div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = $('.myImg');
-    var modalImg = $("#img01");
-    var captionText = document.getElementById("caption");
-    $('.myImg').click(function(){
-        modal.style.display = "block";
-        var newSrc = this.src;
-        modalImg.attr('src', newSrc);
-        captionText.innerHTML = this.alt;
-    });
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-  </script>
-
+  
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Animations -->
+<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Exterbal Script -->
+<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
 </body>
