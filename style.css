@@ -200,7 +200,7 @@ background-color: dodgerblue;
   margin-right: 10px;
 }
 .e-title{
-  flex: 2;
+  flex: 3;
 }
 .e-expand{
   text-align: right;
@@ -228,7 +228,7 @@ color: #4844FC;
 }
 .oi-cards{
   flex: 1;
-  background-color: rgb(240, 233, 243);
+  background-color: rgb(255, 239, 239);
   margin: .7%;
   padding: 1%;
   height: 270px;
@@ -279,36 +279,6 @@ background-color: rgb(169, 239, 248);
 }
 
 /* ---------------------- E-N-D  H-O-M-E-P-A-G-E ---------------------- */
-
-  /* FOOT */  
-  .footer{
-    background-color: #25438C;
-    color: white;
-    text-align: center;
-    align-items: center;
-    bottom: 0;
-    width: 100%;
-    padding: 5%;
-    vertical-align: middle;
-  }
-  .foot{
-    display: flex;
-    margin: 2.5% 0;
-  }
-  .foot-base{
-    display: flex;
-  }
-  .base-items{
-    margin-top: 15px;
-  }
-
-  .foot-left, .foot-centered, .foot-right{
-    text-align: center;
-    margin: auto;
-  }
-.foot-right-hide{
-  display: none;
-}
 
 
 /* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
