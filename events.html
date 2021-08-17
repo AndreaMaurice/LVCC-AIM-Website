@@ -1,212 +1,370 @@
 <!DOCTYPE html>
-<html lang="">
-<head>
-  <title>Association of ICT Majors</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- AIM Logo -->
-  <link rel="shortcut icon" href="img/aim-logo.png" type="image/x-icon">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@700&display=swap" rel="stylesheet">
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    /* EVENTS PAGE */
-.events-page{
-  background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("img/events/event.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  z-index: 999999;
-}
+  <html lang="">
+    <head>
+      <title>Association of ICT Majors</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- AIM Logo -->
+      <link rel="shortcut icon" href="img/aim-logo.png" type="image/x-icon">
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@700&display=swap" rel="stylesheet">
+      <!-- Styles -->
+      <link rel="stylesheet" href="style.css">
+      <!-- Animations -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <style>
+        /* EVENTS PAGE */
+    .events-page{
+      background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("img/events/event.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
+      z-index: 999999;
+    }
 
-.events-banner{
-  padding: 23% 15%;
-  text-align: center;
-  color: white;
-}
+    .events-banner{
+      padding: 23% 15%;
+      text-align: center;
+      color: white;
+    }
 
-.sub-title{
-padding: 1% 7%;
-padding-bottom: 1.5%;
-}
-.events-listings{
-  padding: 4% 0;
-}
-.events-list{
-  padding: 1.5% 10%;
-  display: flex;
-}
-.events-list img{
-  height: 200px;
-  border-radius: 50%;
-}
-.event-desc{
-  padding-top: 3%;
-  margin-left: 5%;
-}
-.desc{
-  padding-top: 1%;
-  text-align: justify;
-}
-
-.img-cont{
-  margin: 0 auto;
-  text-align: center;
-}
-  @media only screen and (max-width: 1220px){
-    .events-page{
-      height: 500px;
+    .sub-title{
+    padding: 1% 7%;
+    padding-bottom: 1.5%;
     }
-  }
-  @media only screen and (max-width: 970px){
-    .events-page{
-      height: 450px;
+    .events-listings{
+      padding: 4% 0;
     }
-  }
-  @media only screen and (max-width: 880px){
-    .events-page{
-      height: 400px;
+    .events-list{
+      padding: 1.5% 10%;
+      display: flex;
     }
-  }
-  @media only screen and (max-width: 770px){
-    .events-page{
-      height: 350px;
-    }
-  }
-  @media only screen and (max-width: 560px){
-    .events-page{
-      height: 300px;
-    }
-  }
-  @media only screen and (max-width: 480px){
-    .events-page{
-      height: 250px;
-    }
-  }
-	/* Medium devices (landscape tablets, 768px and up) */
-	@media only screen and (max-width: 768px) {
-    .events-list, .img-cont{
-      display: block;
-      margin: auto;
+    .events-list img{
+      height: 200px;
+      border-radius: 50%;
     }
     .event-desc{
-      margin-left: 0;
+      padding-top: 3%;
+      margin-left: 5%;
     }
-    .title, .sub-title {
+    .desc{
+      padding-top: 1%;
+      text-align: justify;
+    }
+
+    .img-cont{
+      margin: 0 auto;
       text-align: center;
     }
-    .sub-title{
-      margin-top: 7%;
-    }
-  	}
-  </style>
-</head>
-<body>
-<!-- Navigation Bar -->
-<nav class="navi">
-  <div class="logo">
-    <a class="items" href="index.html"><img src="img/aim-logo.png" alt="AIM Logo" height="40"></a>
-    <a class="items-aim" href="index.html"><h3>Association of ICT Majors</h3></a>
-  </div>
-  <input type="checkbox" id="click">
-  <label for="click" class="menu-btn">
-    <i class="fas fa-bars"></i>
-  </label>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about-us.html">About Us</a></li>
-    <li><a class="active" href="events.html">Events & Activites</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="join-us.html">Join Us</a></li>
-  </ul>
-</nav>
+      @media only screen and (max-width: 1220px){
+        .events-page{
+          height: 500px;
+        }
+      }
+      @media only screen and (max-width: 970px){
+        .events-page{
+          height: 450px;
+        }
+      }
+      @media only screen and (max-width: 880px){
+        .events-page{
+          height: 400px;
+        }
+      }
+      @media only screen and (max-width: 770px){
+        .events-page{
+          height: 350px;
+        }
+      }
+      @media only screen and (max-width: 560px){
+        .events-page{
+          height: 300px;
+        }
+      }
+      @media only screen and (max-width: 480px){
+        .events-page{
+          height: 250px;
+        }
+      }
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (max-width: 768px) {
+        .events-list, .img-cont{
+          display: block;
+          margin: auto;
+        }
+        .event-desc{
+          margin-left: 0;
+        }
+        .title, .sub-title {
+          text-align: center;
+        }
+        .sub-title{
+          margin-top: 7%;
+        }
+        }
+      </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navi">
+      <div class="logo">
+        <a class="items" href="index.html"><img src="img/aim-logo.png" alt="AIM Logo" height="40"></a>
+        <a class="items-aim" href="index.html"><h3>Association of ICT Majors</h3></a>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a class="active" href="events.html">Events & Activites</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join-us.html">Join Us</a></li>
+      </ul>
+    </nav>
 
-<!-- Events -->
-<div class="events-page">
-  <div class="events-banner">
-    <h1>Events & Activites</h1>
-  </div>
-</div>
-<div class="events-listings">
-  <div class="events-list">
-    <div class="img-cont">
-      <img src="img/events/aim-logo.png" alt="">
+    <!-- Events -->
+    <div class="events-page">
+      <div class="events-banner">
+        <h1>Events & Activites</h1>
+      </div>
     </div>
-    <div class="event-desc">
+    <div class="events-listings">
+      <div class="events-list">
+        <div class="img-cont">
+          <img src="img/events/aim-logo.png" alt="">
+        </div>
+        <div class="event-desc" id="orientation">
+          <div class="sub-title">
+            <h2>BSIS & ACT Program Orientation</h2>
+          </div>
+          <div class="desc">
+            Before a semester begins, every course program conducts a program orientation. This includes the announcement
+            of upcoming events, elected officers, and rediscussion of the organizations mission and vision.
+          </div>
+        </div>
+      </div>
+      <div class="events-list">
+        <div class="img-cont">
+          <img src="img/events/y4it.png" alt="">
+        </div>
+        <div class="event-desc" id="y4it">
+          <div class="sub-title">
+            <h2>Youth for IT (Y4IT)</h2>
+          </div>
+          <div class="desc">
+            Y4iT is a 3-day event hosted by the UP System Information Technology Foundation for computer-related 
+            professions and technology. This is a nationwide event which is attended by IT professionals, teachers, 
+            students, and enthusiasts. The event is composed of different series of topics presentations from professionals 
+            around the globe.
+          </div>
+        </div>
+      </div>
+      <div class="events-list">
+        <div class="img-cont">
+          <img src="img/events/ictweek.png" alt="">
+        </div>
+        <div class="event-desc" id="ictweek">
+          <div class="sub-title">
+            <h2>ICT Week</h2>
+          </div>
+          <div class="desc">
+            This event is an Annual Celebration for ICT Major students of La Verdad Christian College of Apalit, Pampanga. 
+            Started in the year of December 2017. The celebration includes activities suchas seminars from invited IT 
+            Professionals, hackathons, programming competitions, and as well as sports that help build bond amongst team members.
+            The first ever ICT Week was was put together with the help of the following: Lois Lane, Mike Agamin, 
+            Aiza Abcede, Jeff Pecana, Giselle Dionisio, Krystal Cruz, Yves Marin, Racquel Salumbides, Lemuel Florentino, Christine Larazo.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S.Y. 2020-2021 ~ ICT Week Winners -->
+    <div class="event-listings">
       <div class="sub-title">
-        <h2>BSIS & ACT Program Orientation</h2>
+        <h2>S.Y. 2020-2021 ~ ICT Week Winners</h2>
       </div>
-      <div class="desc">
-        Before a semester begins, every course program conducts a program orientation. This includes the announcement of upcoming events, elected officers, and rediscussion of the organizations mission and vision. The organization's previous ICT Majors orientation was held last January 12, 2021.          </div>
-    </div>
-  </div>
-  <div class="events-list">
-    <div class="img-cont">
-      <img src="img/events/y4it.png" alt="">
-    </div>
-    <div class="event-desc" id="y4it">
-      <div class="sub-title">
-        <h2>Youth for IT (Y4IT)</h2>
-      </div>
-      <div class="desc">
-        Y4iT is a 3-day event hosted by the UP System Information Technology Foundation for computer-related professions and technology. This is a nationwide event which is attended by IT professionals, teachers, students, and enthusiasts. The event is composed of different series of topics presentations from professionals around the globe.</div>
-    </div>
-  </div>
-  <div class="events-list">
-    <div class="img-cont">
-      <img src="img/events/ictweek.png" alt="">
-    </div>
-    <div class="event-desc" id="ictweek">
-      <div class="sub-title">
-        <h2>ICT Week</h2>
-      </div>
-      <div class="desc">
-        This event is an Annual Celebration for ICT Major students of La Verdad Christian College of Apalit, Pampanga. Started in the year of December 2017 and is currently on its 4th Year. The celebration includes activities such as seminars from invited IT Professionals, hackathons, programming competitions, and as well as sports that help build bond amongst team members.
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- FOOTER -->
-<div class="footer-fluid">
-  <div class="footer-title" data-aos="fade-right" data-aos-duration="1000">
-    <h1>Get in Touch</h1>
-  </div>
-  <div class="link-cont" data-aos="fade-left" data-aos-duration="1000">
-    <div class="link-row">
-      <a class="footer-links a" href="index.html">
-        <img src="img/aim-logo.png" alt="" height="45">
-      </a>
-      <a class="footer-links l" href="https://lvcc.com.ph/" target="_blank">
-        <img src="img/lvcc_logo.png" alt="" height="60">
-      </a>
-    </div>
-    <div class="link-row">
-      <a class="footer-links f" href="https://www.facebook.com/AssociationofICTMajors" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="footer-links g" href="mailto:aim@laverdad.edu.ph" target="_blank">
-        <i class="fab fa-google"></i>
-      </a>
-    </div>
-  </div>
-</div>
+      <!-- MR. AND MS. ICT WEEK -->
+      <div class="row">
+        <div class="card">
+          <h3 class="comp-title">Mr. ICT Week</h3>
+          <img class="contestant" src="/img/events/contestants/mr-ict.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Dave A. Sadsad <br>
+            BSIS 2
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="comp-title">Ms. ICT Week</h3>
+          <img class="contestant" src="/img/events/contestants/ms-ict.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Angel Blaze Candinato <br>
+            BSIS 2
+          </p>        
+        </div>
+      </div>
 
-<!-- Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<!-- Animations -->
-<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!-- Exterbal Script -->
-<script type="text/javascript" src="script.js"></script>
+      <!-- DIGITAL POSTER MAKING -->
+      <div class="row">
+        <div class="card">
+          <h3 class="comp-title">Digital Poster Making</h3>
+          <img class="contestant" src="/img/events/contestants/poster.png" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Henry Kaye Aldaba <br>
+            Senior High School
+          </p>
+        </div>
+        <div class="card">
+          <img class="entry" src="/img/events/entries/poster.png" alt="" width="400" height="550">
+        </div>
+      </div>
 
-</body>
+      <!-- DIGITAL SLOGAN MAKING -->
+      <div class="row">
+        <div class="card">
+          <h3 class="comp-title">Digital Slogan Making</h3>
+          <img class="contestant" src="/img/events/contestants/slogan.png" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Zechariah Labung <br>
+            Junior High School
+          </p>
+        </div>
+        <div class="card">
+          <img class="entry" src="/img/events/entries/slogan.png" alt="" width="400" height="550">
+        </div>
+      </div>
+
+      <!-- ESSAY WRITING -->
+      <div class="row">
+        <div class="card">
+          <h3 class="comp-title">Essay Writing</h3>
+          <img class="contestant" src="/img/events/contestants/essay.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Sheena Mae L. Del Monte <br>
+            Junior High School
+          </p>
+        </div>
+        <div class="card">
+          <img class="entry" src="" alt="" width="400" height="550">
+        </div>
+      </div>
+
+      <!-- SOLO SINGING COMPETITION -->
+      <div class="row">
+        <div class="card">
+          <h3 class="comp-title">Solo Singing Competition</h3>
+          <img class="contestant" src="/img/events/contestants/solo-singing.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Jayson Lopez <br>
+            ACT 2
+          </p>
+        </div>
+        <div class="card">
+          <!-- Embed Solo Singing -->
+        </div>
+      </div>
+
+      <!-- PROGRAMMING -->
+      <div class="row">
+        <div class="card">
+          <h3 class="comp-title">Computer Programming Competition</h3>
+          <h4 class="team-name">Dream Team</h4>
+          <img class="contestant" src="/img/events/contestants/programming/1.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Jason Ramirez <br>
+            BSIS 3
+          </p>
+        </div>
+        <div class="card">
+          <img class="contestant" src="/img/events/contestants/programming/2.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Aljon Isip <br>
+            BSIS 3
+          </p>        
+        </div>
+      </div>
+
+      <!-- WEBSITE MAKING COMPETITION -->
+      <div class="row">
+        <div class="card">
+          <h3 class="comp-title">Website Making Competition</h3>
+          <h4 class="team-name">Team Shabu Shabu</h4>
+          <img class="contestant" src="/img/events/contestants/website/1.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Carlo S. Soleta <br>
+            BSIS 2
+          </p>
+        </div>
+        <div class="card">
+          <img class="contestant" src="/img/events/contestants/website/2.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Andrea Maurice De Guzman <br>
+            BSIS 2
+          </p>        
+        </div>
+        <div class="card">
+          <img class="contestant" src="/img/events/contestants/website/3.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Daniel John C. Saballa <br>
+            BSIS 2
+          </p>        
+        </div>
+        <div class="card">
+          <img class="contestant" src="/img/events/contestants/website/4.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Dave A. Sadsad <br>
+            BSIS 2
+          </p>        
+        </div>
+        <div class="card">
+          <img class="contestant" src="/img/events/contestants/website/5.jpg" alt="" width="300" height="450">
+          <p class="contestant-desc">
+            Heidi Guevarra <br>
+            BSIS 2
+          </p>        
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-fluid">
+      <div class="footer-title" data-aos="fade-right" data-aos-duration="1000">
+        <h1>Get in Touch</h1>
+      </div>
+      <div class="link-cont" data-aos="fade-left" data-aos-duration="1000">
+        <div class="link-row">
+          <a class="footer-links a" href="index.html">
+            <img src="img/aim-logo.png" alt="" height="45">
+          </a>
+          <a class="footer-links l" href="https://lvcc.com.ph/" target="_blank">
+            <img src="img/lvcc_logo.png" alt="" height="60">
+          </a>
+        </div>
+        <div class="link-row">
+          <a class="footer-links f" href="https://www.facebook.com/AssociationofICTMajors" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="footer-links g" href="mailto:aim@laverdad.edu.ph" target="_blank">
+            <i class="fab fa-google"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Animations -->
+  <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Exterbal Script -->
+  <script type="text/javascript" src="script.js"></script>
+
+  </body>
 </html>
 

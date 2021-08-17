@@ -490,7 +490,7 @@ opacity: 100%;
   background: #C4C4C4;
   transition: 0.5s;
 }
-.row div {
+.div, .div0, .div1, .div2, .div3 {
   color: black;
 }
 section {
