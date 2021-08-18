@@ -1,28 +1,5 @@
 // A-B-O-U-T  U-S ---------------------
-// Instructors
-var span = document.getElementsByClassName('span');
-var div = document.getElementsByClassName('div');
-var l = 0;
-span[1].onclick = ()=>{
-    l++;
-    for(var i of div)
-    {
-        if (l==0) {i.style.left = "0px";}
-        if (l==1) {i.style.left = "-265px";}
-        if (l==2) {i.style.left = "-550px";}
-        if (l>2) {l=2;}
-    }
-}
-span[0].onclick = ()=>{
-    l--;
-    for(var i of div)
-    {
-        if (l==0) {i.style.left = "0px";}
-        if (l==1) {i.style.left = "-265px";}
-        if (l==2) {i.style.left = "-550px";}
-        if (l<0) {l=0;}
-    }
-}
+
 
 // S.Y. 2020-2021
 var span3 = document.getElementsByClassName('span3');
