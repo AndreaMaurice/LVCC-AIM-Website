@@ -662,6 +662,9 @@ background-color: rgb(169, 239, 248);
 .orientation, .ictweek {
   background-color: #d9f2fd;
 }
+.orientation, .y4it, .ictweek {
+  padding-top: 25px;
+}
 .sub-title{
   padding-bottom: 1.5%;
   text-align: center;
@@ -670,6 +673,7 @@ background-color: rgb(169, 239, 248);
   padding: 4% 0;
 }
 .events-item{
+  padding-top: 50px;
   padding: 2% 10%;
   display: flex;
 }
@@ -686,11 +690,50 @@ background-color: rgb(169, 239, 248);
   font-size: 16px;
   flex: 2;
   text-align: justify;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 .avp {
   text-align: center;
   padding-bottom: 50px;
+}
+
+/* CONTESTANTS & ENTRIES */
+.ictweek-listings .slide_navigation li a{
+  display: block;
+  margin: 0;
+  border-left: 1px solid rgb(172, 172, 172);
+  padding: 7%;
+  color: #333;
+}
+.ictweek-listings .slide_navigation li a.active{
+  color: dodgerblue;
+  border-left: 3px solid dodgerblue;
+}
+.ictweek-listings .slider .slides{
+  overflow-y: auto;
+  max-height: 700px;
+  scrollbar-width: none;
+}
+.ictweek-listings .inner_content p{
+  color: #333;
+  font-size: 16px;
+}
+.ictweek-listings .inner_content h1{
+  color: #000;
+  margin-bottom: 3%;
+}
+.ictweek-listings .slider .slides .slide{
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  color: #333;
+  align-items: center;
+}
+.ictweek-listings img.contestant{
+  width: 300px; 
+  height: 450px;
+  object-fit: cover;
 }
 /* ---------------------- E-N-D E-V-E-N-T-S ---------------------- */
 
