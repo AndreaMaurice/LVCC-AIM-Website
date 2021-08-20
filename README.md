@@ -1,4 +1,4 @@
-# LVCC AIM Website (Champion - ICT Week Entry)
+# LVCC AIM Website (Champion - ICT Week 2020 Entry)
 - a website created for the Association of ICT Majors of La Verdad Christian College.
 
 ## Project Status
