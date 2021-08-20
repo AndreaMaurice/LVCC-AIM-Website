@@ -698,7 +698,16 @@ background-color: rgb(169, 239, 248);
 }
 
 /* CONTESTANTS & ENTRIES */
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
 .ictweek-listings .slider{
+  padding-left: 10%;
   max-width: 100%;
   grid-template-columns: 20% 80%;
   position: relative;
@@ -722,6 +731,7 @@ background-color: rgb(169, 239, 248);
   scrollbar-width: none;
 }
 .ictweek-listings .inner_content .desc{
+  text-align: center;
   display:flex;
 }
 .ictweek-listings .inner_content .cont-block{
@@ -734,10 +744,10 @@ background-color: rgb(169, 239, 248);
 }
 .ictweek-listings .inner_content .row-flex{
   display:flex;
+  padding-bottom: 25px;
 }
 .ictweek-listings .inner_content .second-row{
   display:flex;
-  padding-top: 25px;
   margin-left: 15%;
 }
 .ictweek-listings .inner_content .solo-singing .entry iframe{
@@ -771,22 +781,22 @@ background-color: rgb(169, 239, 248);
   color: #333;
 }
 .ictweek-listings img.pageant-pic{
-  width: 300px; 
-  height: 400px;
+  width: 250px; 
+  height: 350px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .ictweek-listings img.contestant{
-  width: 300px; 
-  height: 400px;
+  width: 200px; 
+  height: 300px;
   object-fit: cover;
   border-radius: 50px;
   box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .ictweek-listings img.entry{
-  width: 350px; 
-  height: 450px;
+  width: 300px; 
+  height: 400px;
   border-radius: 15px;
   box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
