@@ -1,157 +1,109 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-  <title>Association of ICT Majors</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- AIM Logo -->
-  <link rel="shortcut icon" href="img/aim-logo.png" type="image/x-icon">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@700&display=swap" rel="stylesheet">
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-<!-- Navigation Bar -->
-<nav class="navi">
-  <div class="logo">
-    <a class="items" href="index.html"><img src="img/aim-logo.png" alt="AIM Logo" height="40"></a>
-    <a class="items-aim" href="index.html"><h3>Association of ICT Majors</h3></a>
-  </div>
-  <input type="checkbox" id="click">
-  <label for="click" class="menu-btn">
-    <i class="fas fa-bars"></i>
-  </label>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about-us.html">About Us</a></li>
-    <li><a href="events.html">Events & Activites</a></li>
-    <li><a class="active" href="gallery.html">Gallery</a></li>
-    <li><a href="join-us.html">Join Us</a></li>
-  </ul>
-</nav>
+  <head>
+    <title>Association of ICT Majors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- AIM Logo -->
+    <link rel="shortcut icon" href="img/aim-logo.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body class="gallery-page">
+    <!-- Navigation Bar -->
+    <nav class="navi">
+      <div class="logo">
+        <a class="items" href="index.html"><img src="img/aim-logo.png" alt="AIM Logo" height="40"></a>
+        <a class="items-aim" href="index.html"><h3>Association of ICT Majors</h3></a>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="events.html">Events & Activites</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+        <li><a href="join-us.html">Join Us</a></li>
+      </ul>
+    </nav>
 
-<div class="gal-title">
-  <h1>Gallery</h1>
-</div>
+    <div class="gal-title" data-aos="zoom-out-down" data-aos-duration="2000">
+      <h1>Gallery</h1>
+    </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
-  <!-- The Close Button -->
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img" alt="">
+    </div>
 
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
+    <section>
+      <div class="gallery">
+        <img class="profile-photo myImg" src="img/gallery/1.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/2.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/3.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/4.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/5.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/6.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/7.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/8.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/9.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/10.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/11.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/12.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/13.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/14.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/15.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/16.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/17.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/18.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/19.jpg" alt="">
+        <img class="profile-photo myImg" src="img/gallery/20.jpg" alt="">
+      </div>
+    </section>
 
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
+    <!-- FOOTER -->
+    <div class="footer-fluid">
+      <div class="footer-title" data-aos="fade-right" data-aos-duration="1000">
+        <h1>Get in Touch</h1>
+      </div>
+      <div class="link-cont" data-aos="fade-left" data-aos-duration="1000">
+        <div class="link-row">
+          <a class="footer-links a" href="index.html">
+            <img src="img/aim-logo.png" alt="" height="45">
+          </a>
+          <a class="footer-links l" href="https://lvcc.com.ph/" target="_blank">
+            <img src="img/lvcc_logo.png" alt="" height="60">
+          </a>
+        </div>
+        <div class="link-row">
+          <a class="footer-links f" href="https://www.facebook.com/AssociationofICTMajors" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="footer-links g" href="mailto:aim@laverdad.edu.ph" target="_blank">
+            <i class="fab fa-google"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
-<div class="gal">
-  <div class="section-color">
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/1.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/2.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/3.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/4.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/5.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/6.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/7.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/8.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/9.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/10.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/11.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/12.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/13.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/14.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/15.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/16.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/17.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/18.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/19.jpg">
-    </div>
-    <div class="gal-wrapper">
-      <img class="profile-photo myImg" src="img/gallery/20.jpg">
-    </div>
-  </div>
-</div>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Animations -->
+    <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- External Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
-<!-- FOOTER -->
-<div class="footer-fluid">
-  <div class="footer-title" data-aos="fade-right" data-aos-duration="1000">
-    <h1>Get in Touch</h1>
-  </div>
-  <div class="link-cont" data-aos="fade-left" data-aos-duration="1000">
-    <div class="link-row">
-      <a class="footer-links a" href="index.html">
-        <img src="img/aim-logo.png" alt="" height="45">
-      </a>
-      <a class="footer-links l" href="https://lvcc.com.ph/" target="_blank">
-        <img src="img/lvcc_logo.png" alt="" height="60">
-      </a>
-    </div>
-    <div class="link-row">
-      <a class="footer-links f" href="https://www.facebook.com/AssociationofICTMajors" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="footer-links g" href="mailto:aim@laverdad.edu.ph" target="_blank">
-        <i class="fab fa-google"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-
-<!-- Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<!-- Animations -->
-<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!-- Exterbal Script -->
-<script type="text/javascript" src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-</body>
+  </body>
 </html>

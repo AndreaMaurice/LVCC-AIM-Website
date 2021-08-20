@@ -511,7 +511,7 @@ background-color: rgb(169, 239, 248);
   transition: all ease 0.5s;
 }
 .one-2{
-  background-color: #bfe8f8;
+  background-color: #bfe8f8; 
 }
 .one-9{
   background-color: #f9dbff;
@@ -699,7 +699,7 @@ background-color: rgb(169, 239, 248);
 
 /* CONTESTANTS & ENTRIES */
 .zoom {
-  transition: transform .2s;
+  transition: transform .5s;
 }
 .zoom:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -730,6 +730,9 @@ background-color: rgb(169, 239, 248);
   max-height: 700px;
   scrollbar-width: none;
 }
+.ictweek-listings .website-align{
+  text-align: center;
+}
 .ictweek-listings .inner_content .desc{
   text-align: center;
   display:flex;
@@ -745,10 +748,6 @@ background-color: rgb(169, 239, 248);
 .ictweek-listings .inner_content .row-flex{
   display:flex;
   padding-bottom: 25px;
-}
-.ictweek-listings .inner_content .second-row{
-  display:flex;
-  margin-left: 15%;
 }
 .ictweek-listings .inner_content .solo-singing .entry iframe{
   width: 560px;
@@ -810,60 +809,32 @@ background-color: rgb(169, 239, 248);
 /* ---------------------- E-N-D E-V-E-N-T-S ---------------------- */
 
 /* ---------------------- S-T-A-R-T G-A-L-L-E-R-Y ---------------------- */
+body.gallery-page {
+  background-image: linear-gradient(to bottom right, #bfe8f8, #f9dbff);
+}
 .gal-title{
   text-align: center;
-  margin: 15% auto 10% auto;
+  font-size: 40px;
+  margin: 10% auto 10% auto;
 }
-.gal-wrapper{
-  margin: 2px;
+.gallery{
+  line-height:0;
+   -webkit-column-count:4; 
+   -webkit-column-gap:15px; 
+   -moz-column-count:4;
+   -moz-column-gap:15px;
+   column-count:4;
+   column-gap:15px;
 }
-.gal {
-  margin-bottom: 5%;
-}
-
-@media only screen and (max-width: 1220px){
-  .events-page, .about-us, .masthead{
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 970px){
-  .events-page, .about-us, .masthead{
-    height: 450px;
-  }
-}
-@media only screen and (max-width: 880px){
-  .events-page, .about-us, .masthead{
-    height: 400px;
-  }
-}
-@media only screen and (max-width: 770px){
-  .events-page, .about-us, .masthead{
-    height: 350px;
-  }
-  .mission-icon, .vision-icon{
-    display: none;
-  }
-  .section-title{
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 560px){
-  .events-page, .about-us, .masthead{
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 480px){
-  .events-page, .about-us, .masthead{
-    height: 250px;
-  }
-}
-.myImg {
+.gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 15px; 
   border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
 }
-
-.myImg:hover {opacity: 0.7;}
+.myImg:hover {
+  box-shadow: 5px 10px 8px #888888;
+}
 
 /* The Modal (background) */
 .modal {
@@ -883,45 +854,20 @@ background-color: rgb(169, 239, 248);
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
+  padding-top: 50px;
   display: block;
   width: 80%;
   max-width: 700px;
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
-
 @keyframes zoom {
   from {transform:scale(0)}
   to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -930,10 +876,30 @@ background-color: rgb(169, 239, 248);
       width: 100%;
   }
 }
-
+@media (max-width: 1200px) {
+  .gallery {
+   -moz-column-count:    3;
+   -webkit-column-count: 3;
+   column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  .gallery {
+   -moz-column-count:    2;
+   -webkit-column-count: 2;
+   column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #gallery {
+   -moz-column-count:    1;
+   -webkit-column-count: 1;
+   column-count:         1;
+  }
+}
 /* ---------------------- E-N-D G-A-L-L-E-R-Y ---------------------- */
 
-/* --------------- JOIN US ----------------- */
+/* --------------- S-T-A-R-T J-O-I-N U-S ----------------- */
 .masthead {
   width: 100%; 
   height: auto;
@@ -1039,7 +1005,7 @@ background-color: rgb(169, 239, 248);
     width: 500px;
   }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 415px) {
   .heading {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1048,5 +1014,4 @@ background-color: rgb(169, 239, 248);
     width: 475px;
   }
 }
-
-/* ---------------- END JOIN US ------------------- */
+/* ---------------- E-N-D J-O-I-N U-S ------------------- */
