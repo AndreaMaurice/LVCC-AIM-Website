@@ -5,21 +5,25 @@
 Ongoing
 
 ## Original Pages:
-Homepage
-About Us
-Events & Activities
-Gallery
-Contact Us
+- Homepage
+- About Us
+- Events & Activities
+- Gallery
+- Contact Us
 
 ## Additional Pages:
-Articles
-Join Us (replaced Contact Us)
+- Articles
+- Join Us (replaced Contact Us)
 
 ## Authors: 
 Daniel John Saballa
+
 Andrea Maurice De Guzman
+
 Carlo Soleta
+
 Heidi Guevarra
+
 Dave Sadsad
 
 ## Check our works:
