@@ -81,25 +81,3 @@
     // Initialize sliders
     vertical_slider.init();
 }());
-
-
-// G-A-L-L-E-R-Y ---------------------
-//Get the modal
-    var modal = document.getElementById('myModal');
-
-//Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = $('.myImg');
-    var modalImg = $("#img");
-    $('.myImg').click(function(){
-        modal.style.display = "block";
-        var newSrc = this.src;
-        modalImg.attr('src', newSrc);
-    });
-
-//if you click on anything except the modal itself or the "open modal" link, close the modal
-    $(document).click(function(event) {
-        //if you click on anything except the modal itself or the "open modal" link, close the modal
-        if (!$(event.target).closest(".myImg, .modal-content").length) {
-            modal.style.display = "none";
-        }
-    });
