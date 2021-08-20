@@ -698,6 +698,13 @@ background-color: rgb(169, 239, 248);
 }
 
 /* CONTESTANTS & ENTRIES */
+.ictweek-listings .slider{
+  max-width: 100%;
+  grid-template-columns: 20% 80%;
+  position: relative;
+  display: grid;
+  border-radius: 5px;
+}
 .ictweek-listings .slide_navigation li a{
   display: block;
   margin: 0;
@@ -714,9 +721,43 @@ background-color: rgb(169, 239, 248);
   max-height: 700px;
   scrollbar-width: none;
 }
+.ictweek-listings .inner_content .desc{
+  display:flex;
+}
+.ictweek-listings .inner_content .cont-block{
+  display:block;
+  text-align: center;
+  padding-right: 50px;
+}
+.ictweek-listings .inner_content .entry-block{
+  display:block;
+}
+.ictweek-listings .inner_content .row-flex{
+  display:flex;
+}
+.ictweek-listings .inner_content .second-row{
+  display:flex;
+  padding-top: 25px;
+  margin-left: 15%;
+}
+.ictweek-listings .inner_content .solo-singing .entry iframe{
+  width: 560px;
+  height: 315px;
+  border-radius: 15px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
 .ictweek-listings .inner_content p{
   color: #333;
   font-size: 16px;
+}
+.ictweek-listings .inner_content h3{
+  color: #333;
+  padding-top: 100px;
+}
+.ictweek-listings .inner_content h2{
+  color: #333;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 .ictweek-listings .inner_content h1{
   color: #000;
@@ -728,12 +769,33 @@ background-color: rgb(169, 239, 248);
   flex-direction: column;
   padding: 40px;
   color: #333;
-  align-items: center;
+}
+.ictweek-listings img.pageant-pic{
+  width: 300px; 
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .ictweek-listings img.contestant{
   width: 300px; 
-  height: 450px;
+  height: 400px;
   object-fit: cover;
+  border-radius: 50px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.ictweek-listings img.entry{
+  width: 350px; 
+  height: 450px;
+  border-radius: 15px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.ictweek-listings img.website{
+  width: 200px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 /* ---------------------- E-N-D E-V-E-N-T-S ---------------------- */
 
