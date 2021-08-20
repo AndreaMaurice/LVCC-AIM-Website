@@ -977,6 +977,12 @@ background-color: rgb(169, 239, 248);
   }
 }
 @media screen and (max-width: 1300px) {
+  
+  .join-cont{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1080px) {
   /* General */
   p{
     font-size: 14px;
@@ -989,7 +995,7 @@ background-color: rgb(169, 239, 248);
   }
   h3{
     font-size: 15px;
-  }
+  } */
   /* HOME - BANNER */
   .banner #title-1 {
     font-size: 80px;
@@ -1008,11 +1014,6 @@ background-color: rgb(169, 239, 248);
     font-size: 40px;
     margin-bottom: 5%;
   }
-  .join-cont{
-    width: 70%;
-  }
-}
-@media screen and (max-width: 1080px) {
   /* NAVIGATION */
   nav .menu-btn i{
     display: block;
