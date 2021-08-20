@@ -283,91 +283,6 @@ background-color: rgb(169, 239, 248);
 
 /* ---------------------- E-N-D  H-O-M-E-P-A-G-E ---------------------- */
 
-
-/* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
-@media screen and (max-width: 1000px){
-  nav{
-    padding: 0 40px 0 50px;
-  }
-}
-@media screen and (max-width: 1080px) {
-  nav .menu-btn i{
-    display: block;
-    color: black;
-  }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  nav ul{
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background-color: #fff;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul{
-    left: 0;
-  }
-  nav ul li{
-    width: 100%;
-    margin: 10px 0;
-  }
-  nav ul li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
-    border: none;
-    background: none;
-    color: deepskyblue;
-  }
-}
-@media screen and (max-width: 440px){
-.items-aim{
-  display: none;
-}
-}
-
-@media only screen and (max-width: 1220px){
-  .foot{
-  display: block;
-  }
-  .side{
-    display: flex;
-  }
-  .foot-left, .foot-centered, .foot-right-hide{
-    margin-top: 7%;
-  }
-  .foot-right{
-    display: none;
-  }
-  .foot-right-hide{
-    display: block;
-  }
-  .base-items{
-    margin-top: 1%;
-  }
-  .foot-base{
-    margin-top: 5%;
-  }
-}
-
-@media screen and (max-width: 660px){
-  .foot-base, .side{
-    display: block;
-  }
-}
-/* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
-
 /* ---------------------- S-T-A-R-T A-B-O-U-T U-S ---------------------- */
 /* COVER */
 .about-us{
@@ -1050,3 +965,88 @@ background-color: rgb(169, 239, 248);
 }
 
 /* ---------------- END JOIN US ------------------- */
+
+/* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
+/* img { max-width: 100%; height: auto; } */
+@media screen and (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  nav .menu-btn i{
+    display: block;
+    color: black;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 10px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    border: none;
+    background: none;
+    color: deepskyblue;
+  }
+}
+@media screen and (max-width: 440px){
+.items-aim{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 1220px){
+  .foot{
+  display: block;
+  }
+  .side{
+    display: flex;
+  }
+  .foot-left, .foot-centered, .foot-right-hide{
+    margin-top: 7%;
+  }
+  .foot-right{
+    display: none;
+  }
+  .foot-right-hide{
+    display: block;
+  }
+  .base-items{
+    margin-top: 1%;
+  }
+  .foot-base{
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 660px){
+  .foot-base, .side{
+    display: block;
+  }
+}
+/* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
