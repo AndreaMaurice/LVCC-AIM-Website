@@ -876,6 +876,7 @@ body.gallery-page {
   }
   .form iframe {
     width: 625px;
+    height: 790px;
   }
 }
 @media screen and (max-width: 865px) {
@@ -894,6 +895,7 @@ body.gallery-page {
   }
   .form iframe {
     width: 575px;
+    height: 810px;
   }
 }
 @media screen and (max-width: 715px) {
@@ -911,7 +913,8 @@ body.gallery-page {
   padding-bottom: 60px;
   }
   .form iframe {
-    width: 525px;
+    width: 520px;
+    height: 820px;
   }
 }
 @media screen and (max-width: 490px) {
@@ -920,7 +923,18 @@ body.gallery-page {
   padding-bottom: 50px;
   }
   .form iframe {
-    width: 500px;
+    width: 445px;
+    height: 900px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .heading {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+  .form iframe {
+    width: 395px;
+    height: 1000px;
   }
 }
 @media screen and (max-width: 415px) {
@@ -929,10 +943,9 @@ body.gallery-page {
   padding-bottom: 40px;
   }
   .form iframe {
-    width: 475px;
+    width: 370px;
   }
 }
-
 /* ---------------- END JOIN US ------------------- */
 
 /* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
