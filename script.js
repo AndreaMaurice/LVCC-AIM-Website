@@ -83,4 +83,6 @@
 }());
 
 // P-R-E-L-O-A-D-E-R
-
+setTimeout(function(){
+    $('.loader_bg').fadeToggle();
+}, 1500);

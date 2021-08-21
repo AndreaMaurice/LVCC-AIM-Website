@@ -729,7 +729,7 @@ background-color: rgb(169, 239, 248);
 /* ---------------------- E-N-D E-V-E-N-T-S ---------------------- */
 
 /* ---------------------- S-T-A-R-T G-A-L-L-E-R-Y ---------------------- */
-body.gallery-page {
+body#gallery-page {
   background-image: linear-gradient(to bottom right, #bfe8f8, #f9dbff);
 }
 .gal-title{
@@ -820,7 +820,7 @@ body.gallery-page {
 /* ---------------------- E-N-D G-A-L-L-E-R-Y ---------------------- */
 
 /* --------------- S-T-A-R-T J-O-I-N U-S ----------------- */
-body.join-page {
+body#join-page {
   background-color: #f6efef;
 }
 .masthead {
@@ -954,47 +954,88 @@ body.join-page {
 /* ---------------- E-N-D J-O-I-N U-S ------------------- */
 
 /* ---------------- S-T-A-R-T P-R-E-L-O-A-D-E-R ------------------- */
-.loader-wrapper {
+.loader_bg{
+  position: fixed;
+  z-index: 999999;
+  background: #FFFFFF;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #242f3f;
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }
 .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.loader span {
+  font-family: 'Sora', sans-serif;
+  font-size: 30px;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  animation: loader 2s infinite ease;
+  transition: all 0.5s;
+  animation: animate 2s infinite;
 }
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
+.loader .l {
+  color: #3AB4F9;
 }
-@keyframes loader {
-  0% { transform: rotate(0deg);}
-  25% { transform: rotate(180deg);}
-  50% { transform: rotate(180deg);}
-  75% { transform: rotate(360deg);}
-  100% { transform: rotate(360deg);}
+.loader .o {
+  color: #4D9CFA;
 }
-@keyframes loader-inner {
-  0% { height: 0%;}
-  25% { height: 0%;}
-  50% { height: 100%;}
-  75% { height: 100%;}
-  100% { height: 0%;}
+.loader .a {
+  color: #6084FB;
+}
+.loader .d {
+  color: #736CFC;
+}
+.loader .i {
+  color: #8554FC;
+}
+.loader .n {
+  color: #983CFD;
+}
+.loader .g {
+  color: #AB24FE;
+}
+.loader span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.loader span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.loader span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.loader span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.loader span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+    margin-left: 0;
+  }
+  25% {
+    transform: translateY(-15px);
+    margin-left: 10px;
+    text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+  }
+  100% {
+    transform: translateY(0);
+    margin-left: 0;
+  }
 }
 /* ---------------- E-N-D P-R-E-L-O-A-D-E-R ------------------- */
+
+/* ---------------- S-T-A-R-T 4-0-4 ------------------- */
+
+/* ---------------- E-N-D 4-0-4 ------------------- */
 
 /* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
 /* img { max-width: 100%; height: auto; } */
