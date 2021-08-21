@@ -818,6 +818,9 @@ body.gallery-page {
 /* ---------------------- E-N-D G-A-L-L-E-R-Y ---------------------- */
 
 /* --------------- S-T-A-R-T J-O-I-N U-S ----------------- */
+body.join-page {
+  background-color: #f6efef;
+}
 .masthead {
   width: 100%; 
   height: auto;
