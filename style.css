@@ -251,7 +251,9 @@ padding: 7% 0;
   align-items: center;
   flex-direction: column;
 }
-
+.oi-cards.founders{
+  background-color: rgb(238, 229, 250);
+}
 
 /* JOIN US */
 .join-fluid{
