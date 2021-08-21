@@ -86,3 +86,8 @@
 setTimeout(function(){
     $('.loader_bg').fadeToggle();
 }, 1500);
+
+//4-0-4
+// Parallax Code
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
