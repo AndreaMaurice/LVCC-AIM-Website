@@ -85,7 +85,7 @@
 // P-R-E-L-O-A-D-E-R
 setTimeout(function(){
     $('.loader_bg').fadeToggle();
-}, 4000);
+}, 2500);
 
 //4-0-4
 var scene = document.getElementById('scene');

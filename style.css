@@ -969,30 +969,54 @@ body#join-page {
 }
 .loader span {
   font-family: 'Sora', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   display: inline-block;
   transition: all 0.5s;
   animation: animate 2s infinite;
+}
+@media screen and (max-width: 1080px) {
+  .loader span {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 770px){
+  .loader span {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .loader span {
+    font-size: 16px;
+  }
 }
 .loader .l {
   color: #3AB4F9;
 }
 .loader .o {
-  color: #4D9CFA;
+  color: #3AB4F9;
 }
 .loader .a {
-  color: #6084FB;
+  color: #4D9CFA;
 }
 .loader .d {
-  color: #736CFC;
+  color: #6084FB;
 }
 .loader .i {
-  color: #8554FC;
+  color: #736CFC;
 }
 .loader .n {
-  color: #983CFD;
+  color: #8554FC;
 }
 .loader .g {
+  color: #983CFD;
+}
+.loader .dot1 {
+  color: #983CFD;
+}
+.loader .dot2 {
+  color: #AB24FE;
+}
+.loader .dot3 {
   color: #AB24FE;
 }
 .loader span:nth-child(1) {
@@ -1016,6 +1040,15 @@ body#join-page {
 .loader span:nth-child(7) {
   animation-delay: 0.7s;
 }
+.loader span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.loader span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.loader span:nth-child(10) {
+  animation-delay: 1.0s;
+}
 @keyframes animate {
   0% {
     transform: translateY(0);
@@ -1023,12 +1056,39 @@ body#join-page {
   }
   25% {
     transform: translateY(-15px);
-    margin-left: 10px;
+    margin-left: 15px;
     text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
   }
   100% {
     transform: translateY(0);
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 1080px) {
+  @keyframes animate {
+    25% {
+      transform: translateY(-15px);
+      margin-left: 12px;
+      text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+    }
+  }
+}
+@media screen and (max-width: 770px) {
+  @keyframes animate {
+    25% {
+      transform: translateY(-15px);
+      margin-left: 9px;
+      text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  @keyframes animate {
+    25% {
+      transform: translateY(-15px);
+      margin-left: 6px;
+      text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+    }
   }
 }
 /* ---------------- E-N-D P-R-E-L-O-A-D-E-R ------------------- */
@@ -1404,12 +1464,11 @@ body#join-page {
   }
 }
 @media screen and (max-width: 1300px) {
-  
   .join-cont{
     width: 70%;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) { 
   /* General */
   p{
     font-size: 14px;
@@ -1490,7 +1549,7 @@ body#join-page {
     width: 90%;
   }
 }
-@media screen and (max-width: 814px) {
+@media screen and (max-width: 814px) { 
 /* Home - Banner */
 .banner #title-1 {
   font-size: 60px;
