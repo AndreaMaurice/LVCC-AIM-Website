@@ -1256,24 +1256,25 @@ body#join-page {
     width: 100%;
   }
 }
-#error-page .wrapper .container .text article h1 {
-  color: white;
-  font-size: 30px;
-  letter-spacing: 0.6px;
-  margin-bottom: 30px;
-  text-shadow: 6px 6px 10px #32243E;
-}
-@media screen and (max-width: 799px) {
-  #error-page .wrapper .container .text article h1 {
-    font-size: 20px;
-  }
-}
 #error-page .wrapper .container .text article p {
   color: white;
   font-size: 18px;
   letter-spacing: 0.6px;
   margin-bottom: 40px;
   text-shadow: 6px 6px 10px #32243E;
+}
+#error-page .wrapper .container .text article .no-page {
+  font-weight: 600;
+  font-size: 20px;
+}
+@media screen and (max-width: 799px) {
+  #error-page .wrapper .container .text article p {
+    font-size: 15px;
+    letter-spacing: 0.4px;
+  }
+  #error-page .wrapper .container .text article .no-page {
+    font-size: 20px;
+  }
 }
 #error-page .wrapper .container .text article button {
   height: 40px;
