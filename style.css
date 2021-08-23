@@ -673,6 +673,9 @@ background-color: rgb(169, 239, 248);
   color: #000;
   margin-bottom: 3%;
 }
+.ictweek-listings .essay-padding{
+  padding-right: 25px;
+}
 .ictweek-listings img.pageant-pic{
   width: 250px; 
   height: 350px;
