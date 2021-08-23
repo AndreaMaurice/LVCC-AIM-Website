@@ -618,113 +618,76 @@ background-color: rgb(169, 239, 248);
 }
 
 /* CONTESTANTS & ENTRIES */
-.zoom {
-  transition: transform .5s;
-}
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-}
-.ictweek-listings .slider{
-  padding-left: 10%;
-  max-width: 100%;
-  grid-template-columns: 20% 80%;
-  position: relative;
-  display: grid;
-  border-radius: 5px;
-}
-.ictweek-listings .slide_navigation li a{
+.ictweek-listings {
   display: block;
-  margin: 0;
-  border-left: 1px solid rgb(172, 172, 172);
-  padding: 7%;
-  color: #333;
+  text-align: center;
+  padding-top: 50px;
 }
-.ictweek-listings .slide_navigation li a.active{
-  color: dodgerblue;
-  border-left: 3px solid dodgerblue;
-}
-.ictweek-listings .slider .slides{
-  overflow-y: auto;
-  max-height: 700px;
-  scrollbar-width: none;
+.ictweek-listings .competition{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
 }
 .ictweek-listings .website-align{
   text-align: center;
 }
-.ictweek-listings .inner_content .desc{
-  text-align: center;
+.ictweek-listings .content{
   display:flex;
 }
-.ictweek-listings .inner_content .cont-block{
-  display:block;
+.ictweek-listings .cont-block{
   text-align: center;
   padding-right: 50px;
 }
-.ictweek-listings .inner_content .entry-block{
-  display:block;
-}
-.ictweek-listings .inner_content .row-flex{
+.ictweek-listings .row-flex{
   display:flex;
   padding-bottom: 25px;
 }
-.ictweek-listings .inner_content .solo-singing .entry iframe{
+.ictweek-listings .solo-singing .entry iframe{
   width: 560px;
   height: 315px;
   border-radius: 15px;
   box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
-.ictweek-listings .inner_content p{
+.ictweek-listings p{
   color: #333;
   font-size: 16px;
 }
-.ictweek-listings .inner_content h3{
+.ictweek-listings h3{
   color: #333;
   padding-top: 100px;
 }
-.ictweek-listings .inner_content h2{
+.ictweek-listings h2{
   color: #333;
   padding-top: 50px;
   padding-bottom: 25px;
 }
-.ictweek-listings .inner_content h1{
+.ictweek-listings h2.team-name{
+  color: #333;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.ictweek-listings h1{
   color: #000;
   margin-bottom: 3%;
-}
-.ictweek-listings .slider .slides .slide{
-  min-height: 50px;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  color: #333;
 }
 .ictweek-listings img.pageant-pic{
   width: 250px; 
   height: 350px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .ictweek-listings img.contestant{
   width: 200px; 
   height: 300px;
   object-fit: cover;
   border-radius: 50px;
-  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .ictweek-listings img.entry{
   width: 300px; 
   height: 400px;
   border-radius: 15px;
-  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
-}
-.ictweek-listings img.website{
-  width: 200px; 
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50px;
-  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 /* ---------------------- E-N-D E-V-E-N-T-S ---------------------- */
 
@@ -754,7 +717,8 @@ body#gallery-page {
   border-radius: 5px;
 }
 .myImg:hover {
-  box-shadow: 5px 10px 8px #888888;
+  box-shadow: 5px 10px 8px 0 #7b7b7b;
+  cursor: pointer;
 }
 
 /* The Modal (background) */
@@ -961,12 +925,14 @@ body#join-page {
   background: #FFFFFF;
   width: 100%;
   height: 100%;
+  cursor: wait;
 }
 .loader {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  cursor: wait;
 }
 .loader span {
   font-family: 'Sora', sans-serif;
@@ -974,6 +940,7 @@ body#join-page {
   display: inline-block;
   transition: all 0.5s;
   animation: animate 2s infinite;
+  cursor: wait;
 }
 @media screen and (max-width: 1080px) {
   .loader span {
