@@ -81,3 +81,12 @@
     // Initialize sliders
     vertical_slider.init();
 }());
+
+// P-R-E-L-O-A-D-E-R
+setTimeout(function(){
+    $('.loader_bg').fadeToggle();
+}, 4000);
+
+//4-0-4
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
