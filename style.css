@@ -442,7 +442,7 @@ background-color: rgb(169, 239, 248);
 
 .profile-card:hover {
   border-radius: 5px;
-  height: 350px;
+  height: 330px;
   width: 300px;
 }
 .p-header {
