@@ -79,12 +79,17 @@ ul{
  /* -------------- E-N-D  NAVIGATION ---------------- */
 
  /* -------------- FOOTER ---------------- */
- .footer-fluid{
-   margin-top: 7.5%;
+ .footer-fluid, .footer-fluid.a{
   display: flex;
   text-align: center;
   /* justify-content: center; */
   padding: 3% 5%;
+}
+.footer-fluid{
+  margin-top: 7.5%;
+}
+.footer-fluid.a{
+  margin: 0 !important;
 }
 .footer-title{
   flex: 75%;
