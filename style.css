@@ -155,7 +155,7 @@ background-color: dodgerblue;
 .banner .text{
   flex: 1.7;
 }
-.banner .photo{
+.banner .photo-banner{
   flex: 1;
   text-align: center;
   align-self: center;
@@ -1511,7 +1511,7 @@ body#join-page {
     .aim-desc {
       font-size: 14px;
     }
-    .banner .photo img{
+    .banner .photo-banner img{
       height: 300px;
     }
     /* Home - Join Us */
@@ -1638,7 +1638,7 @@ body#join-page {
 .aim-desc {
   font-size: 12px;
 }
-.banner .photo img{
+.banner .photo-banner img{
   height: 250px;
 }
 /* Home - Join Us */
@@ -1687,7 +1687,7 @@ body#join-page {
   font-size: 30px;
 }
 
-.banner .photo img{
+.banner .photo-banner img{
   height: 200px;
 }
 /* Home - Join */
@@ -1742,7 +1742,7 @@ body#join-page {
   text-align: justify;
   margin-right: 0;
 }
-.banner .photo{
+.banner .photo-banner{
   display: none;
 }
 .banner{
