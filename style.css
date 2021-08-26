@@ -636,13 +636,16 @@ background-color: rgb(169, 239, 248);
 .win-fluid{
   padding: 5% 5% 0 5%;
 }
+.ictwin{
+  padding: 10% 2% 0 2%
+}
 .ictwin-fluid{
   display: flex;
   flex-flow: row wrap;
-  padding: 20% 2% 0 2%;
+  padding: 10% 2% 0 2%;
 }
 .awc{
-  padding: 20% 2% 0 2%;
+  padding: 10% 2% 0 2%;
 }
 .awc-fluid{
   display: flex;
