@@ -20,17 +20,13 @@ ul{
   list-style-type: none;
 }
 /* Author */
-.dj-deyi{
+.author-fluid{
   text-align: center;
-  font-size: 12px;
   padding-bottom: 2%;
 }
-.dj:hover{
-  color: dodgerblue;
-}
-.deyi:hover{
-  color: #4844FC;
-}
+  .author{
+    font-size: 12px;
+  }
 
 /* -------------- NAVIGATION ---------------- */
   nav{
@@ -166,7 +162,7 @@ background-color: dodgerblue;
   line-height: 1.1;
 }
 #title-1 {
-  font-size: 100px;
+  font-size: 46px;
 }
 #title-2 {
   font-size: 70px;
@@ -1503,10 +1499,10 @@ body#join-page {
   }
     /* HOME - BANNER */
     .banner #title-1 {
-      font-size: 80px;
+      font-size: 40px;
     }
     .banner #title-2 {
-      font-size: 50px;
+      font-size: 60px;
     }
     .aim-desc {
       font-size: 14px;
@@ -1630,10 +1626,10 @@ body#join-page {
 @media screen and (max-width: 814px) { 
 /* Home - Banner */
 .banner #title-1 {
-  font-size: 60px;
+  font-size: 30px;
 }
 .banner #title-2 {
-  font-size: 40px;
+  font-size: 50px;
 }
 .aim-desc {
   font-size: 12px;
@@ -1681,10 +1677,10 @@ body#join-page {
 
   /* Home - Banner */
 .banner #title-1 {
-  font-size: 50px;
+  font-size: 22px;
 }
 .banner #title-2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .banner .photo-banner img{
@@ -1729,16 +1725,8 @@ body#join-page {
     }
 }
 @media screen and (max-width: 560px){
- 
   /* Home - Banner */
-/* .banner #title-1 {
-  font-size: 40px;
-}
-.banner #title-2 {
-  font-size: 20px;
-} */
 .aim-desc {
-  /* font-size: 12px; */
   text-align: justify;
   margin-right: 0;
 }
@@ -1786,6 +1774,10 @@ body#join-page {
   /* EVENTS - Winners */
 .competition{
   padding-left: 50%;
-}
+  }
+  /* Author */
+  .author{
+    font-size: 9px;
+  }
   }
 /* ---- ------ --------- RESPONSIVENESS -------- --------- ------ */
