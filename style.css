@@ -700,11 +700,15 @@ body#gallery-page {
   padding: 0px 25px 0px 25px;
   line-height:0;
   -webkit-column-count:4; 
-  -webkit-column-gap:15px; 
+  -webkit-column-gap:10px; 
   -moz-column-count:4;
-  -moz-column-gap:15px;
+  -moz-column-gap:10px;
   column-count:4;
-  column-gap:15px;
+  column-gap:10px;
+}
+#gallery-page section h1 {
+  text-align: center;
+  padding: 50px 0px  30px 0px ;
 }
 .gallery img {
   width: 100% !important;
@@ -713,7 +717,7 @@ body#gallery-page {
   border-radius: 5px;
 }
 .myImg:hover {
-  box-shadow: 5px 10px 8px 0 #7b7b7b;
+  box-shadow: 5px 8px 8px 0 #7b7b7b;
   cursor: pointer;
 }
 
