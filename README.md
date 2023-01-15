@@ -2,7 +2,7 @@
 - a website created for the Association of ICT Majors of La Verdad Christian College.
 
 ## Project Status
-Ongoing
+Finished
 
 ## Original Pages:
 - Homepage
